@@ -1,0 +1,37 @@
+/* main color #2A9EB8  */
+@import url("https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+span {
+  font-family: "Padauk", sans-serif;
+}
+.bg-decoration {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(113, 109, 109, 0) 10%,
+    rgba(187, 185, 185, 0) 90%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.btn {
+  @apply border py-2 px-5 bg-[#2A9EB8] text-gray-100 rounded-sm hover:bg-zinc-500  transition duration-200;
+}
+.btn-outline {
+  @apply border py-2 px-5 border-[#2A9EB8] text-[#2A9EB8] rounded-sm hover:bg-[#2A9EB8] hover:text-white transition duration-200;
+}
+
+.bg-decoration-main {
+  background: rgb(187, 185, 185);
+  background: linear-gradient(
+    180deg,
+    rgba(187, 185, 185, 0) 79%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
