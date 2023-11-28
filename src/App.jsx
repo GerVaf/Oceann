@@ -14,6 +14,7 @@ import Home from "./components/pages/Home";
 import Loading from "./components/Loading/Loading";
 import { selectLoading } from "./Global/rtk/LoadingSlice";
 import { langChange } from "./Global/rtk/LanguageSlice";
+import Footer from "./components/Nav&Footer/Footer";
 
 const App = () => {
   const [languageSelectorVisible, setLanguageSelectorVisible] = useState(false);
@@ -86,6 +87,8 @@ const App = () => {
           <Route key={el.id} path={`${el.path}`} element={el.com} />
         ))}
       </Routes>
+
+      <Footer/>
     </div>
   );
 };

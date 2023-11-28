@@ -35,3 +35,10 @@ span {
     rgba(255, 255, 255, 1) 100%
   );
 }
+
+.card-heading {
+  @apply text-[#2A9EB8];
+}
+.icon-container{
+  @apply bg-[#2A9EB8] text-white
+}

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "/src/App.css";
 import { CiMonitor } from "react-icons/ci";
 import { PiDeviceMobileSpeakerThin } from "react-icons/pi";
 import { FaEarthAmericas } from "react-icons/fa6";
@@ -13,14 +12,14 @@ const Cards = () => {
 
   return (
     <div className="mt-10 flex  flex-wrap gap-10 justify-center max-w-[1200px]">
-      <div className=" w-[360px] h-[310px] bg-slate-200 rounded-[1rem] px-2 py-5 ">
+      <div className=" w-[330px] h-[310px] flex shadow-lg bg-gray-100 rounded-[1rem] px-2 py-5 ">
         <div className="flex flex-row  gap-5">
           <div className="flex-shrink-0 mt-[0.4rem]">
             <div className="icon-container w-[60px] h-[60px] rounded-[0.7rem]  flex justify-center items-center">
               <CiMonitor className=" text-[50px] card-icon" />
             </div>
           </div>
-          <div className=" flex flex-col gap-8">
+          <div className=" flex flex-col justify-around">
             <h2 className="card-heading text-lg font-medium">
               {active ? "High Quality" : <span>အရည်အသွေး မြင့်မားမှု</span>}
             </h2>
@@ -38,14 +37,14 @@ const Cards = () => {
           </div>
         </div>
       </div>
-      <div className=" w-[360px] h-[310px] bg-slate-200 rounded-[1rem] px-2 py-5 ">
+      <div className=" w-[330px] h-[310px] flex shadow-lg bg-gray-100 rounded-[1rem] px-2 py-5 ">
         <div className="flex flex-row gap-5">
           <div className="flex-shrink-0 mt-[0.4rem]">
             <div className="icon-container w-[60px] h-[60px] rounded-[0.7rem]  flex justify-center items-center">
               <PiDeviceMobileSpeakerThin className=" text-[50px] card-icon" />
             </div>
           </div>
-          <div className=" flex flex-col gap-8">
+          <div className=" flex flex-col justify-around">
             <h2 className="card-heading text-lg font-medium">
               {active ? (
                 "Devices Support IPTV"
@@ -69,14 +68,14 @@ const Cards = () => {
           </div>
         </div>
       </div>
-      <div className=" w-[360px] h-[310px] bg-slate-200 rounded-[1rem] px-2 py-5 ">
+      <div className=" w-[330px] h-[310px] flex shadow-lg bg-gray-100 rounded-[1rem] px-2 py-5 ">
         <div className="flex flex-row gap-5">
           <div className="flex-shrink-0 mt-[0.4rem]">
             <div className="icon-container w-[60px] h-[60px] rounded-[0.7rem]  flex justify-center items-center">
               <FaEarthAmericas className=" text-[40px] card-icon" />
             </div>
           </div>
-          <div className=" flex flex-col gap-8">
+          <div className=" flex flex-col justify-around">
             <h2 className="card-heading text-lg font-medium">
               {active ? "Global provider" : <span>ကမ္ဘာအနှံ့ ဝန်ဆောင်မှု</span>}
             </h2>
@@ -97,14 +96,14 @@ const Cards = () => {
           </div>
         </div>
       </div>
-      <div className=" w-[360px] h-[310px] bg-slate-200 rounded-[1rem] px-2 py-5 ">
+      <div className=" w-[330px] h-[310px] flex shadow-lg bg-gray-100 rounded-[1rem] px-2 py-5 ">
         <div className="flex flex-row gap-5">
           <div className="flex-shrink-0 mt-[0.4rem]">
             <div className="icon-container w-[60px] h-[60px] rounded-[0.7rem]  flex justify-center items-center">
               <SiSpeedtest className=" text-[40px] card-icon" />
             </div>
           </div>
-          <div className=" flex flex-col gap-8">
+          <div className=" flex flex-col justify-around">
             <h2 className="card-heading text-lg font-medium">
               {active ? (
                 "High speed and stability"
@@ -128,14 +127,14 @@ const Cards = () => {
           </div>
         </div>
       </div>
-      <div className=" w-[360px] h-[310px] bg-slate-200 rounded-[1rem] px-2 py-5 ">
+      <div className=" w-[330px] h-[310px] flex shadow-lg bg-gray-100 rounded-[1rem] px-2 py-5 ">
         <div className="flex flex-row gap-5">
           <div className="flex-shrink-0 mt-[0.4rem]">
             <div className="icon-container w-[60px] h-[60px] rounded-[0.7rem]  flex justify-center items-center">
               <MdPlaylistPlay className=" text-[50px] card-icon" />
             </div>
           </div>
-          <div className=" flex flex-col gap-8">
+          <div className=" flex flex-col justify-around">
             <h2 className="card-heading text-lg font-medium">
               {active ? (
                 "Custom playlist"
@@ -159,7 +158,7 @@ const Cards = () => {
           </div>
         </div>
       </div>
-      <div className=" w-[360px] h-[310px] bg-slate-200 rounded-[1rem] px-2 py-5 ">
+      <div className=" w-[330px] h-[310px] flex shadow-lg bg-gray-100 rounded-[1rem] px-2 py-5 ">
         <div className="flex flex-row gap-5">
           <div className="flex-shrink-0 mt-[0.4rem]">
             <div className="icon-container w-[60px] h-[60px] rounded-[0.7rem]  flex justify-center items-center">
@@ -191,7 +190,7 @@ const Cards = () => {
                 </span>
               )}
             </p>
-            <HiArrowNarrowRight className=" card-arrow text-4xl  self-end mr-4 cursor-pointer" />
+            {/* <HiArrowNarrowRight className=" card-arrow text-4xl  self-end mr-4 cursor-pointer" /> */}
           </div>
         </div>
       </div>

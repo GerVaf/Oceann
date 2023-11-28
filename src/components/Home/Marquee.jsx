@@ -8,34 +8,43 @@ import {
   selectLoading,
 } from "../../Global/rtk/LoadingSlice";
 
+import f1 from "../../assets/football/f1.jpg";
+import f2 from "../../assets/football/f2.jpg";
+import f3 from "../../assets/football/f3.jpg";
+import f4 from "../../assets/football/f4.jpg";
+import f5 from "../../assets/football/f5.jpg";
+import f6 from "../../assets/football/f6.jpg";
+import f7 from "../../assets/football/f7.jpg";
+import f8 from "../../assets/football/f8.jpg";
+import f9 from "../../assets/football/f9.jpg";
+import f10 from "../../assets/football/f10.jpg";
+import f11 from "../../assets/football/f11.jpg";
+import f12 from "../../assets/football/f12.jpg";
+import f13 from "../../assets/football/f13.jpg";
+import f14 from "../../assets/football/f14.jpg";
+import f15 from "../../assets/football/f15.jpg";
+import f16 from "../../assets/football/f16.jpg";
+
 const Marquee = () => {
-  const dispatch = useDispatch();
   const loading = useSelector(selectLoading);
 
-  // for showing data
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        // Start loading when fetching begins
-        dispatch(startLoading());
-
-        const response = await get();
-        setData(response?.data?.results);
-
-        // Stop loading when fetching is complete
-        dispatch(stopLoading());
-      } catch (error) {
-        console.log("Error fetching data:", error);
-        // Stop loading in case of an error
-        dispatch(stopLoading());
-      }
-    };
-
-    fetchData();
-  }, [dispatch]);
-
+  const data = [
+    { image: f1 },
+    { image: f2 },
+    { image: f3 },
+    { image: f4 },
+    { image: f5 },
+    { image: f6 },
+    { image: f7 },
+    { image: f8 },
+    { image: f9 },
+    { image: f10 },
+    { image: f11 },
+    { image: f12 },
+    { image: f14 },
+    { image: f15 },
+    { image: f16 },
+  ];
   // for animaition
   const containerVariants = {
     animate: {
@@ -50,7 +59,7 @@ const Marquee = () => {
     },
   };
 
-  console.log(data);
+  // console.log(data);
   return (
     <div
       className="my-5 flex justify-center"
@@ -73,12 +82,12 @@ const Marquee = () => {
               return (
                 <motion.div
                   whileHover={{ scale: 1.2 }}
-                  key={item?.id}
+                  key={item?.image}
                   className=" w-32 h-48"
                 >
                   <img
                     className="w-full h-full object-cover"
-                    src={`https://image.tmdb.org/t/p/w500/${item?.poster_path}`}
+                    src={item?.image}
                     alt=""
                   />
                 </motion.div>
