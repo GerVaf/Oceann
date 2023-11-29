@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import logoo from "../../assets/loogo.png";
 
 const NavBar = () => {
+  const [languageSelectorVisible, setLanguageSelectorVisible] = useState(false);
   // for mobile
   const [active, setActive] = useState(false);
 
@@ -42,12 +43,12 @@ const NavBar = () => {
   return (
     <>
       <div
-        className={` sticky top-0 z-40 w-full text-[#2A9EB8] shadow-md flex items-center py-2 lg:px-10 md:h-20 sm:py-5 sm:items-center justify-between bg-white/90 backdrop-blur-sm `}
+        className={` sticky top-0 z-40 w-full text-[#2A9EB8] shadow-md flex items-center py-3 lg:px-10 md:h-20 sm:py-5 sm:items-center justify-between bg-white/90 backdrop-blur-sm `}
       >
         {/* logo don't extract it cuz it's so fucking long */}
 
         <NavLink className="" to={"/"}>
-          <img className=" w-8 md:w-16 h-8 md:h-16 ml-5" src={logoo} alt="" />
+          <img className=" w-12 md:w-16 h-12 md:h-16 ml-5" src={logoo} alt="" />
         </NavLink>
 
         {/* link cate  for Desktop*/}
@@ -90,7 +91,7 @@ const NavBar = () => {
         {/* for mobile  */}
         <div
           onClick={() => setActive((prevActive) => !prevActive)}
-          className="lg:hidden bg-[#2A9EB8] text-white rounded-full mr-5 w-6 h-6 md:w-10 md:h-10 md:text-lg text-[10px] flex justify-center items-center z-50 cursor-pointer"
+          className="lg:hidden bg-[#2A9EB8] text-white rounded-full mr-5 w-10 h-10 md:w-10 md:h-10 md:text-lg text-lg flex justify-center items-center z-50 cursor-pointer"
         >
           {active ? <BsX className="text-2xl" /> : <FaBars />}
         </div>

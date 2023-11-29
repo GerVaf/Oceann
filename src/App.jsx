@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { FaLanguage } from "react-icons/fa";
+import usFlag from "./assets/football/us.png";
+import myanFlag from "./assets/football/myan.png";
 import NavBar from "./components/Nav&Footer/NavBar";
 import Features from "./components/pages/Features";
 import Packages from "./components/pages/Packages";
@@ -54,7 +56,11 @@ const App = () => {
                   setLanguageSelectorVisible(!languageSelectorVisible);
               }}
             >
-              English
+              <img
+                className="w-9 h-7 object-cover rounded-md"
+                src={usFlag}
+                alt=""
+              />
             </div>
             <div
               onClick={() => {
@@ -62,7 +68,11 @@ const App = () => {
                   setLanguageSelectorVisible(!languageSelectorVisible);
               }}
             >
-              Myanmar
+              <img
+                className="w-9 h-7 object-cover rounded-md"
+                src={myanFlag}
+                alt=""
+              />
             </div>
           </div>
         </motion.div>
@@ -76,10 +86,10 @@ const App = () => {
             : { opacity: 0, x: 50 }
         }
         transition={{ duration: 0.3 }}
-        className="absolute z-50 right-5 top-40 text-2xl text-white bg-[#2A9EB8] px-3 cursor-pointer"
+        className="absolute z-40 right-16 top-5 gap-5 flex p-1 text-white bg-[#2A9EB8] rounded-md cursor-pointer"
         onClick={() => setLanguageSelectorVisible(!languageSelectorVisible)}
       >
-        <FaLanguage size={30} />
+        <FaLanguage size={25} />
       </motion.div>
       {/* Display loading component if loading is true */}
       <Routes>
@@ -88,7 +98,7 @@ const App = () => {
         ))}
       </Routes>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };
