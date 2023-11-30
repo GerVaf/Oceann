@@ -13,6 +13,7 @@ import f10 from "../../assets/football/f10.jpg";
 import f11 from "../../assets/football/f11.jpg";
 import f12 from "../../assets/football/f12.jpg";
 import f13 from "../../assets/football/f13.jpg";
+import f15 from "../../assets/football/f15.jpg";
 import { motion } from "framer-motion";
 const Movie = () => {
   const data = [
@@ -29,10 +30,11 @@ const Movie = () => {
     { image: f11 },
     { image: f12 },
     { image: f13 },
+    { image: f15 },
   ];
   return (
-    <div className=" ">
-      <Marquee>
+    <div className="mt-5">
+      <Marquee autoFill={true}>
         {data.map((item) => {
           return (
             <motion.div

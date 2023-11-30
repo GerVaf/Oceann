@@ -3,6 +3,7 @@ import Hero from "../Home/Hero";
 import BackMarquee from "../Home/BackMarquee";
 import CardComponent from "../Home/CardComponent";
 import Movie from "../Home/Movie";
+import Information from "../Home/Information";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <div className="flex flex-col my-5">
         <BackMarquee />
       </div>
+      <Information/>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { BsX } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import logoo from "../../assets/loogo.png";
+import logoo from "../../assets/football/loogo.jpeg";
 
 const NavBar = () => {
   const [languageSelectorVisible, setLanguageSelectorVisible] = useState(false);

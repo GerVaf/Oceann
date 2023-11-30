@@ -6,9 +6,10 @@ import { SiSpeedtest } from "react-icons/si";
 import { MdPlaylistPlay } from "react-icons/md";
 import { BsCashCoin, BsClock } from "react-icons/bs";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { useSelector } from "react-redux";
 
 const Cards = () => {
-  const [active, setActive] = useState(false);
+  const lang = useSelector((state) => state?.language?.eng);
 
   return (
     <div className="mt-10 flex  flex-wrap gap-10 justify-center max-w-[1200px]">
@@ -22,10 +23,10 @@ const Cards = () => {
           <hr className="h-1 bg-[#2A9EB8] w-4/6" />
           <div className=" flex flex-col justify-around items-center h-full px-2">
             <h2 className="card-heading text-xl font-medium">
-              {active ? "High Quality" : <span>အရည်အသွေး မြင့်မားမှု</span>}
+              {lang ? "High Quality" : <span>အရည်အသွေး မြင့်မားမှု</span>}
             </h2>
             <p className=" text-gray-700 text-lg">
-              {active ? (
+              {lang ? (
                 "We offer best in class quality. We have SD, HD 720p and FHD 1080p with FULL BIT RATE support."
               ) : (
                 <span>
@@ -48,14 +49,14 @@ const Cards = () => {
           <hr className="h-1 bg-[#2A9EB8] w-4/6" />
           <div className=" flex flex-col justify-around items-center h-full px-2">
             <h2 className="card-heading text-xl font-medium">
-              {active ? (
+              {lang ? (
                 "Devices Support IPTV"
               ) : (
                 <span>IPTV ကိုထောက်ပံ့သော စက်များ</span>
               )}
             </h2>
             <p className=" text-gray-700 text-lg">
-              {active ? (
+              {lang ? (
                 "Fire TV Stick 4K streaming device , Android Phone , Android Box , Android TV , Smart TV And, iPhone , iPad , Computer , WebPlayer are the Supported Platforms."
               ) : (
                 <span>
@@ -78,10 +79,10 @@ const Cards = () => {
           <hr className="h-1 bg-[#2A9EB8] w-4/6" />
           <div className=" flex flex-col justify-around items-center h-full px-2">
             <h2 className="card-heading text-xl font-medium">
-              {active ? "Global provider" : <span>ကမ္ဘာအနှံ့ ဝန်ဆောင်မှု</span>}
+              {lang ? "Global provider" : <span>ကမ္ဘာအနှံ့ ဝန်ဆောင်မှု</span>}
             </h2>
             <p className=" text-gray-700 text-lg">
-              {active ? (
+              {lang ? (
                 "We offer our services World-Wide. There are no limits with our service. You can watch any channel you wish and buy subscription from where ever you are located."
               ) : (
                 <span>
@@ -105,14 +106,14 @@ const Cards = () => {
           <hr className="h-1 bg-[#2A9EB8] w-4/6" />
           <div className=" flex flex-col justify-around items-center h-full px-2">
             <h2 className="card-heading text-xl font-medium">
-              {active ? (
+              {lang ? (
                 "High speed and stability"
               ) : (
                 <span>တည်ငြိမ် သွက်လက်သော အမြန်နှုန်း</span>
               )}
             </h2>
             <p className=" text-gray-700 text-lg">
-              {active ? (
+              {lang ? (
                 "Our infrastructure in regards of servers and bandwidth is one of its kind. We are very proud of our high quality channel list and streaming."
               ) : (
                 <span>
@@ -135,14 +136,10 @@ const Cards = () => {
           <hr className="h-1 bg-[#2A9EB8] w-4/6" />
           <div className=" flex flex-col justify-around items-center h-full px-2">
             <h2 className="card-heading text-xl font-medium">
-              {active ? (
-                "Custom playlist"
-              ) : (
-                <span>စိတ်ကြိုက် playlist များ</span>
-              )}
+              {lang ? "Custom playlist" : <span>စိတ်ကြိုက် playlist များ</span>}
             </h2>
             <p className=" text-gray-700 text-lg">
-              {active ? (
+              {lang ? (
                 "You can edit your channel list. The channels are grouped by countries, all you have to do is choose which you want."
               ) : (
                 <span>
@@ -166,10 +163,14 @@ const Cards = () => {
           <hr className="h-1 bg-[#2A9EB8] w-4/6" />
           <div className=" flex flex-col justify-around items-center h-full px-2">
             <h2 className="card-heading text-xl font-medium">
-              {active ? "Auto and Free Update" : <span>အရည်အသွေး မြင့်မားမှု</span>}
+              {lang ? (
+                "Auto and Free Update"
+              ) : (
+                <span>အရည်အသွေး မြင့်မားမှု</span>
+              )}
             </h2>
             <p className=" text-gray-700 text-lg">
-              {active ? (
+              {lang ? (
                 "We usually update and add new TV Channels and VODs to the service ."
               ) : (
                 <span>
