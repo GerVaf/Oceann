@@ -39,6 +39,9 @@ span {
 .card-heading {
   @apply text-[#2A9EB8];
 }
-.icon-container{
-  @apply bg-[#2A9EB8] text-white
+.icon-container {
+  @apply bg-[#2A9EB8] text-white;
+}
+.foot {
+  @apply w-10 h-10 bg-white text-[#2A9EB8] hover:text-white hover:bg-[#2A9EB8] border-[#2A9EB8] border flex items-center justify-center rounded-full transition duration-150;
 }

@@ -19,7 +19,7 @@ const ComponentHeader = () => {
           className="text-sm"
           strings={[
             "",
-            "နာမည်ကြီး အားကစာမ | PPV | CINEMAX | HBO SHOWTIME |DOCUMENTARY | KIDS TV | MUSIC WORLD NEWS | MOVIES & SERIES အစရှိသောရုပ်သံလုင်းများကိုကြည့်ရူ့လိုက်ပါ။",
+            "နာမည်ကြီး အားကစာများ, PREMIER LEAGUE, CHAMPION LEAGUE, EUROPA LEAGUE, PPV, CINEMAX, HBO, SHOWTIME, DOCUMENTARY, KIDS TV, MUSIC, WORLD NEWS, MOVIES & SERIES အစရှိသောရုပ်သံလုင်းများကိုတစ်နေရာတည်းမှာကြည့်ရူ့လိုက်ပါ။",
             "",
           ]}
           typeSpeed={50}

@@ -1,13 +1,13 @@
 import React from "react";
 import Hero from "../Home/Hero";
-import Marquee from "../Home/Marquee";
 import BackMarquee from "../Home/BackMarquee";
 import CardComponent from "../Home/CardComponent";
+import Movie from "../Home/Movie";
 
 const Home = () => {
   return (
     <div className="w-full ">
-      <Marquee />
+      <Movie />
       {/* text  */}
       <CardComponent/>
       {/* for showing video section  */}

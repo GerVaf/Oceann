@@ -2,6 +2,7 @@ import React from "react";
 import con from "../../assets/con.gif";
 import {
   BsFacebook,
+  BsMailbox,
   BsMessenger,
   BsSignal,
   BsTelegram,
@@ -15,12 +16,18 @@ const Footer = () => {
         <img className="w-1/4" src={con} alt="" />
         <div className="w-2/4 text-[#2A9EB8] text-lg flex flex-col items-center justify-center gap-5">
           <div className="flex gap-5">
-            <BsFacebook />
-            <BsMessenger />
-            <BsTelegram />
-          </div>
-          <div className="flex gap-5 text-sm">
-            support@blueoceanshop.org
+            <a className="foot" href="https://www.facebook.com/blueoceanx.mm" target="blank">
+              <BsFacebook />
+            </a>
+            <a className="foot" href="https://m.me/blueoceanx.mm" target="blank">
+              <BsMessenger />
+            </a>
+            <a className="foot" href="https://t.me/BlueOcean_TV" target="blank">
+              <BsTelegram />
+            </a>
+            <a className="foot" href="mailto:support@blueoceanshop.org" target="blank">
+              <BsMailbox />
+            </a>
           </div>
         </div>
       </div>
