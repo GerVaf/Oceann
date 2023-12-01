@@ -24,7 +24,7 @@ span {
   @apply border py-2 px-5 bg-[#2A9EB8] text-gray-100 rounded-sm hover:bg-zinc-500  transition duration-200;
 }
 .btn-outline {
-  @apply border py-2 px-5 border-[#2A9EB8] text-[#2A9EB8] rounded-sm hover:bg-[#2A9EB8] hover:text-white transition duration-200;
+  @apply border font-bold hover:bg-white py-2 px-5 border-[#2A9EB8] hover:text-[#2A9EB8] rounded-sm bg-[#2A9EB8] text-white transition duration-200;
 }
 
 .bg-decoration-main {
@@ -44,4 +44,7 @@ span {
 }
 .foot {
   @apply w-10 h-10 bg-white text-[#2A9EB8] hover:text-white hover:bg-[#2A9EB8] border-[#2A9EB8] border flex items-center justify-center rounded-full transition duration-150;
+}
+.card-icon{
+  @apply text-4xl
 }

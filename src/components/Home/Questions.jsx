@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { IoIosArrowForward } from "react-icons/io";
 const Questions = ({ lang }) => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   const variants = {
     visible: { opacity: 1, height: "auto" },
@@ -11,12 +11,12 @@ const Questions = ({ lang }) => {
 
   return (
     <div className="flex flex-col gap-5 items-center">
-      <button className="btn" onClick={() => setShow(!show)}>
+      <button className="btn-outline flex items-center gap-5" onClick={() => setShow(!show)}>
         {lang ? (
           "FREQUENTLY ASKED QUESTIONS"
         ) : (
           <span>အမေးအများဆုံး မေးခွန်းများ</span>
-        )}
+        )} <IoIosArrowForward className={`text-md transition duration-150 ${show && ' rotate-90'} `} />
       </button>
       <AnimatePresence>
         {show && (
@@ -35,7 +35,9 @@ const Questions = ({ lang }) => {
                 {lang ? (
                   "HOW LONG DOES IT TAKE TO ACTIVATE THE SUBSCRIPTION?"
                 ) : (
-                  <span>SUBSCRIPTION လုပ်ပြီးရင် စသုံးဖို့ ဘယ်လောက် ကြာသလဲ?</span>
+                  <span>
+                    SUBSCRIPTION လုပ်ပြီးရင် စသုံးဖို့ ဘယ်လောက် ကြာသလဲ?
+                  </span>
                 )}
               </h1>
               {lang ? (
@@ -45,8 +47,7 @@ const Questions = ({ lang }) => {
                 </p>
               ) : (
                 <span>
-                  ငွေချေပြီး ၃၀ မိနစ် အတွင်း login info များကို
-                  ရရှိပါမည်။
+                  ငွေချေပြီး ၃၀ မိနစ် အတွင်း login info များကို ရရှိပါမည်။
                 </span>
               )}
             </motion.div>
@@ -70,11 +71,11 @@ const Questions = ({ lang }) => {
                 </p>
               ) : (
                 <span>
-                  ကျွန်တော်တို့ကို SMART TV, PC,MAG, Smartphone,
-                  Android TV, Amazon Firestick,SMARTERS app and VLC M3U… Smart TV
-                  Amazon Devices Apple Devices PC Laptop Zgemma Satellite Box
-                  Dreambox Xbox One PS4 iPad iPhone Android Tablets အစရှိသော
-                  device များစွာတွင် အသုံးပြုနိုင်ပါသည်။
+                  ကျွန်တော်တို့ကို SMART TV, PC,MAG, Smartphone, Android TV,
+                  Amazon Firestick,SMARTERS app and VLC M3U… Smart TV Amazon
+                  Devices Apple Devices PC Laptop Zgemma Satellite Box Dreambox
+                  Xbox One PS4 iPad iPhone Android Tablets အစရှိသော device
+                  များစွာတွင် အသုံးပြုနိုင်ပါသည်။
                 </span>
               )}
             </motion.div>
@@ -98,8 +99,8 @@ const Questions = ({ lang }) => {
               ) : (
                 <span>
                   Paypal, Credit & Debit card , Cash-app , Venmo , Zelle , Bank
-                  Transfer, Western Union , Bitcoin စသော payment method
-                  များကို သုံး၍ ငွေပေးချေနိုင်ပါသည်။
+                  Transfer, Western Union , Bitcoin စသော payment method များကို
+                  သုံး၍ ငွေပေးချေနိုင်ပါသည်။
                 </span>
               )}
             </motion.div>
@@ -123,9 +124,8 @@ const Questions = ({ lang }) => {
               ) : (
                 <span>
                   ကျွန်တော်တို့၏ IPTV ကို ကမ္ဘာပေါ်က ဘယ်နေရာမှ မဆို
-                  ကြည့်ရှုနိုင်ပါသည်။ လိုင်းမထစ်ပဲ ချောချော
-                  မွေ့မွေ့ ကြည့်ရှုနိုင်ရန် အင်တာနက် speed အနည်းဆုံး
-                  5Mbps လိုအပ်ပါသည်။
+                  ကြည့်ရှုနိုင်ပါသည်။ လိုင်းမထစ်ပဲ ချောချော မွေ့မွေ့
+                  ကြည့်ရှုနိုင်ရန် အင်တာနက် speed အနည်းဆုံး 5Mbps လိုအပ်ပါသည်။
                 </span>
               )}
             </motion.div>

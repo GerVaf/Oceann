@@ -35,7 +35,12 @@ const App = () => {
 
   return (
     <div className="flex flex-col overflow-y-scroll scrollbar-none scrollbar-thumb-[#2A9EB8] h-[100vh]">
-      {!loading && <NavBar />}
+      {!loading && (
+        <NavBar
+          languageSelectorVisible={languageSelectorVisible}
+          setLanguageSelectorVisible={setLanguageSelectorVisible}
+        />
+      )}
       {loading && <Loading />}
       {/* choose language */}
       <div className="absolute z-50 right-3 top-40 overflow-hidden ">
@@ -86,7 +91,7 @@ const App = () => {
             : { opacity: 0, x: 50 }
         }
         transition={{ duration: 0.3 }}
-        className="absolute z-40 right-16 top-5 gap-5 flex p-1 text-white bg-[#2A9EB8] rounded-md cursor-pointer"
+        className=" absolute lg:hidden z-40 right-16 top-5 gap-5 flex p-1 text-white bg-[#2A9EB8] rounded-md cursor-pointer"
         onClick={() => setLanguageSelectorVisible(!languageSelectorVisible)}
       >
         <FaLanguage size={25} />

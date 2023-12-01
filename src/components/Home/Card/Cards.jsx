@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { CiMonitor } from "react-icons/ci";
 import { PiDeviceMobileSpeakerThin } from "react-icons/pi";
 import { FaEarthAmericas } from "react-icons/fa6";
 import { SiSpeedtest } from "react-icons/si";
 import { MdPlaylistPlay } from "react-icons/md";
-import { BsCashCoin, BsClock } from "react-icons/bs";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import { useSelector } from "react-redux";
+import { RxUpdate } from "react-icons/rx";
 
 const Cards = () => {
   const lang = useSelector((state) => state?.language?.eng);
@@ -17,7 +16,7 @@ const Cards = () => {
         <div className="flex flex-col items-center  gap-5">
           <div className="flex-shrink-0 mt-[0.4rem]">
             <div className="icon-container w-[60px] h-[60px] rounded-[0.7rem]  flex justify-center items-center">
-              <CiMonitor className=" text-[50px] card-icon" />
+              <CiMonitor className=" card-icon" />
             </div>
           </div>
           <hr className="h-1 bg-[#2A9EB8] w-4/6" />
@@ -43,7 +42,7 @@ const Cards = () => {
         <div className="flex flex-col items-center  gap-5">
           <div className="flex-shrink-0 mt-[0.4rem]">
             <div className="icon-container w-[60px] h-[60px] rounded-[0.7rem]  flex justify-center items-center">
-              <PiDeviceMobileSpeakerThin className=" text-[50px] card-icon" />
+              <PiDeviceMobileSpeakerThin className=" card-icon" />
             </div>
           </div>
           <hr className="h-1 bg-[#2A9EB8] w-4/6" />
@@ -130,7 +129,7 @@ const Cards = () => {
         <div className="flex flex-col items-center  gap-5">
           <div className="flex-shrink-0 mt-[0.4rem]">
             <div className="icon-container w-[60px] h-[60px] rounded-[0.7rem]  flex justify-center items-center">
-              <MdPlaylistPlay className=" text-[50px] card-icon" />
+              <MdPlaylistPlay className=" card-icon" />
             </div>
           </div>
           <hr className="h-1 bg-[#2A9EB8] w-4/6" />
@@ -157,7 +156,7 @@ const Cards = () => {
         <div className="flex flex-col items-center  gap-5">
           <div className="flex-shrink-0 mt-[0.4rem]">
             <div className="icon-container w-[60px] h-[60px] rounded-[0.7rem]  flex justify-center items-center">
-              <BsClock className=" text-[50px] card-icon" />
+              <RxUpdate className=" card-icon" />
             </div>
           </div>
           <hr className="h-1 bg-[#2A9EB8] w-4/6" />
@@ -166,17 +165,18 @@ const Cards = () => {
               {lang ? (
                 "Auto and Free Update"
               ) : (
-                <span>အရည်အသွေး မြင့်မားမှု</span>
+                <span>အလိုအလျောက်နှင့် အခမဲ့ အပ်ဒိတ်</span>
               )}
             </h2>
             <p className=" text-gray-700 text-lg">
               {lang ? (
-                "We usually update and add new TV Channels and VODs to the service ."
+                "We usually update and add new TV Channels and VODs to the service.Once you subscribe , you will receive any update for free during your service."
               ) : (
                 <span>
-                  ကျွန်တော်တို့တွင် SD, HD, 720p နှင့် FHD 1080p စသော quality
-                  မျိုးစုံကို အကောင်းဆုံး အရည်အသွေးဖြင့် ဝန်ဆောင်မှု
-                  ပေးထားပါသည်။
+                  ကျွန်ုပ်တို့သည် ဝန်ဆောင်မှုတွင် တီဗီချန်နယ်များနှင့် VOD
+                  အသစ်များကို အလိုအလျောက် အပ်ဒိတ်လုပ်ပြီး ပေါင်းထည့်လေ့ရှိပါသည်။
+                  စာရင်းသွင်းပြီးသည်နှင့် သင့်ဝန်ဆောင်မှုအတွင်း
+                  အပ်ဒိတ်လုပ်ခြင်းကို အခမဲ့ရရှိပါမည်။
                 </span>
               )}
             </p>

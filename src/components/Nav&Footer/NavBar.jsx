@@ -4,9 +4,8 @@ import { FaBars } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import logoo from "../../assets/football/loogo.jpeg";
-
-const NavBar = () => {
-  const [languageSelectorVisible, setLanguageSelectorVisible] = useState(false);
+import { FaLanguage } from "react-icons/fa";
+const NavBar = ({languageSelectorVisible,setLanguageSelectorVisible}) => {
   // for mobile
   const [active, setActive] = useState(false);
 
@@ -53,6 +52,19 @@ const NavBar = () => {
 
         {/* link cate  for Desktop*/}
         <div className="text-md hidden items-center lg:flex lg:gap-20 h-10 ">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={
+              !languageSelectorVisible
+                ? { opacity: 1, x: 0 }
+                : { opacity: 0, x: 50 }
+            }
+            transition={{ duration: 0.3 }}
+            className=" z-40 right-16 top-5 gap-5 flex p-1 lg:px-5 text-white bg-[#2A9EB8] rounded-md cursor-pointer"
+            onClick={() => setLanguageSelectorVisible(!languageSelectorVisible)}
+          >
+            <FaLanguage size={25} />
+          </motion.div>
           {links.map((link, index) => (
             <NavLink to={link.path} key={index}>
               <div

@@ -10,14 +10,14 @@ const Home = () => {
     <div className="w-full ">
       <Movie />
       {/* text  */}
-      <CardComponent/>
+      <CardComponent />
       {/* for showing video section  */}
       <Hero />
       {/* movie slide  */}
       <div className="flex flex-col my-5">
         <BackMarquee />
       </div>
-      <Information/>
+      <Information />
     </div>
   );
 };
