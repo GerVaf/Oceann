@@ -97,8 +97,8 @@ const Packages = () => {
             />
           </div> */}
           <div className="md:w-2/4 md:h-full h-[30vh] relative flex items-center justify-center">
-            <img src={pakg} className="w-full h-full object-cover" alt="" />
-            <p className="text-5xl font-bold text-white absolute">PREMINUM</p>
+            <img src={pakg} className="w-full h-full object-cover object-center" alt="" />
+            {/* <p className="text-5xl font-bold text-[#2A9EB8] absolute">PREMINUM</p> */}
           </div>
           {/* pack title  */}
           <div className=" md:w-2/4 p-2 flex flex-col gap-5">

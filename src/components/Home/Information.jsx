@@ -117,7 +117,7 @@ const Information = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-10 my-10"> 
+      <div className="flex flex-col gap-10 my-10">
         {/* trial  */}
         <div className="justify-between lg:self-center flex flex-col text-center gap-5 px-5 shadow-md py-3 rounded-md mx-2">
           <h1 className="text-2xl font-bold text-[#2A9EB8]">
@@ -130,13 +130,15 @@ const Information = () => {
             )}
           </h1>
           <Link to={"/download"}>
-            <button className="btn-outline">
-              {lang ? (
-                "GET YOUR 24HR TRIAL"
-              ) : (
-                <span>၁ ရက် အခမဲ့ သုံးစွဲခွင့်</span>
-              )}
-            </button>
+            <a href="https://m.me/blueoceanx.mm" target="blank">
+              <button className="btn-outline">
+                {lang ? (
+                  "GET YOUR 24HR TRIAL"
+                ) : (
+                  <span>၁ ရက် အခမဲ့ သုံးစွဲခွင့်</span>
+                )}
+              </button>
+            </a>
           </Link>
         </div>
         <Questions lang={lang} />

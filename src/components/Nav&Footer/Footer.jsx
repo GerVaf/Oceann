@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full bg-[#2A9EB8] text-sm text-white text-center p-2">
-        Copyright &copy; BLUE OCEAN X All Rights Reserved.
+        2023 Copyright &copy; BLUE OCEAN X All Rights Reserved.
       </div>
     </div>
   );

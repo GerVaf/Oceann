@@ -16,7 +16,7 @@ const Loading = () => {
       <div className="circle">
         <div className="logo"></div>
         <div className="text">
-          <p>blueoceantv.com blueoceantv.com </p>
+          <p>blueoceanshop.org blueoceanshop.org </p>
         </div>
       </div>
     </div>
