@@ -12,13 +12,13 @@ const NavBar = ({languageSelectorVisible,setLanguageSelectorVisible}) => {
   // for desktop
   const location = useLocation();
   const links = [
-    { path: "/", text: "Home" },
-    { path: "/features", text: "Features" },
-    { path: "/packages", text: "Packages" },
-    { path: "/channels", text: "Channels" },
-    { path: "/product", text: "Product" },
-    { path: "/download", text: "Download" },
-    { path: "/contact-us", text: "Contact Us" },
+    { path: "/", text: "HOME" },
+    { path: "/features", text: "FEATURES" },
+    { path: "/packages", text: "PACKAGES" },
+    { path: "/channels", text: "CHANNELS" },
+    { path: "/product", text: "PRODUCT" },
+    { path: "/download", text: "DOWNLOAD" },
+    { path: "/contact-us", text: "CONTACT US" },
   ];
 
   const [mouseInside, setMouseInside] = useState(
