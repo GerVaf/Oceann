@@ -13,8 +13,8 @@ const Hero = () => {
       <div className="lg:mt-20 mt-10 lg:px-10 px-2 flex flex-col justify-around gap-5">
         <div className="flex flex-col gap-10 p-3 border shadow-lg rounded-md">
           {/* title  */}
-          <div className="lg:text-4xl text-xl font-bold text-[#2A9EB8]">
-            <h1>
+          <div className="lg:text-4xl text-2xl font-bold text-[#2A9EB8]">
+            <h1 className="pb-2">
               {lang ? (
                 "STOP OVERPAYING CABLE COMPANIES & STREAMING SERVICES"
               ) : (
@@ -27,8 +27,8 @@ const Hero = () => {
             <hr className="h-1 w-2/4 bg-[#2A9EB8]" />
           </div>
           {/* informatinon  */}
-          <div className="flex flex-col lg:gap-2 gap-3 text-gray-600 text-sm 2xl:text-base lg:text-[13px] font-medium">
-            <p className="text-gray-700 text-md">
+          <div className="flex flex-col lg:gap-2 gap-3 text-gray-600 text-lg 2xl:text-base lg:text-[13px] font-medium">
+            <p className="text-gray-700 text-lg">
               {lang ? (
                 "Blue Ocean provides HUGE VALUE and will be the BEST decision in saving money but keeping QUALITY"
               ) : (

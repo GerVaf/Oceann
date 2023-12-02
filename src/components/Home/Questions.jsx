@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoIosArrowForward } from "react-icons/io";
+import kbz from "../../assets/almost/kbz.png";
+import wave from "../../assets/almost/wave.png";
+import waveQr from "../../assets/almost/waveQr.jpg";
+import kpayQr from "../../assets/almost/kpayQr.jpg";
+
 const Questions = ({ lang }) => {
   const [show, setShow] = useState(false);
 
@@ -11,12 +16,18 @@ const Questions = ({ lang }) => {
 
   return (
     <div className="flex flex-col gap-5 items-center">
-      <button className="btn-outline flex items-center gap-5" onClick={() => setShow(!show)}>
+      <button
+        className="btn-outline flex items-center gap-5"
+        onClick={() => setShow(!show)}
+      >
         {lang ? (
           "FREQUENTLY ASKED QUESTIONS"
         ) : (
           <span>အမေးအများဆုံး မေးခွန်းများ</span>
-        )} <IoIosArrowForward className={`text-md transition duration-150 ${show && ' rotate-90'} `} />
+        )}{" "}
+        <IoIosArrowForward
+          className={`text-md transition duration-150 ${show && " rotate-90"} `}
+        />
       </button>
       <AnimatePresence>
         {show && (
@@ -31,7 +42,7 @@ const Questions = ({ lang }) => {
               variants={variants}
               className="flex flex-col gap-5 border-b shadow-md p-2"
             >
-              <h1 className="text-2xl font-bold text-[#2A9EB8]">
+              <h1 className="text-2xl pb-2 border-b-2 border-[#2A9EB8] font-bold text-[#2A9EB8]">
                 {lang ? (
                   "HOW LONG DOES IT TAKE TO ACTIVATE THE SUBSCRIPTION?"
                 ) : (
@@ -55,7 +66,7 @@ const Questions = ({ lang }) => {
               variants={variants}
               className="flex flex-col gap-5 border-b shadow-md p-2"
             >
-              <h1 className="text-2xl font-bold text-[#2A9EB8]">
+              <h1 className="text-2xl pb-2 border-b-2 border-[#2A9EB8] font-bold text-[#2A9EB8]">
                 {lang ? (
                   "DO YOU SUPPORT MY DEVICE"
                 ) : (
@@ -83,32 +94,7 @@ const Questions = ({ lang }) => {
               variants={variants}
               className="flex flex-col gap-5 border-b shadow-md p-2"
             >
-              <h1 className="text-2xl font-bold text-[#2A9EB8]">
-                {lang ? (
-                  "WHAT PAYMENT METHODS ARE AVALIABLE?"
-                ) : (
-                  <span>အသုံးပြုနိုင်သော ငွေပေးချေခြင်း နည်းများ?</span>
-                )}
-              </h1>
-              {lang ? (
-                <p>
-                  You Can Pay With Paypal. For Credit & Debit card , Cash-app ,
-                  Venmo , Zelle , Bank Transfer, Western Union , Bitcoin and
-                  Other Payments Methods, Just Contact US .
-                </p>
-              ) : (
-                <span>
-                  Paypal, Credit & Debit card , Cash-app , Venmo , Zelle , Bank
-                  Transfer, Western Union , Bitcoin စသော payment method များကို
-                  သုံး၍ ငွေပေးချေနိုင်ပါသည်။
-                </span>
-              )}
-            </motion.div>
-            <motion.div
-              variants={variants}
-              className="flex flex-col gap-5 border-b shadow-md p-2"
-            >
-              <h1 className="text-2xl font-bold text-[#2A9EB8]">
+              <h1 className="text-2xl pb-2 border-b-2 border-[#2A9EB8] font-bold text-[#2A9EB8]">
                 {lang ? (
                   "CAN I WATCH IPTV ANYWHERE IN THE WORLD?"
                 ) : (
@@ -125,9 +111,103 @@ const Questions = ({ lang }) => {
                 <span>
                   ကျွန်တော်တို့၏ IPTV ကို ကမ္ဘာပေါ်က ဘယ်နေရာမှ မဆို
                   ကြည့်ရှုနိုင်ပါသည်။ လိုင်းမထစ်ပဲ ချောချော မွေ့မွေ့
-                  ကြည့်ရှုနိုင်ရန် အင်တာနက် speed အနည်းဆုံး 5Mbps လိုအပ်ပါသည်။
+                  ကြည့်ရှုနိုင်ရန် အင်တာနက် speed အနည်းဆုံး 20Mbps လိုအပ်ပါသည်။
                 </span>
               )}
+            </motion.div>
+            <motion.div
+              variants={variants}
+              className="flex flex-col gap-5 border-b shadow-md p-2"
+            >
+              <h1 className="text-2xl pb-2 border-b-2 border-[#2A9EB8] font-bold text-[#2A9EB8]">
+                {lang ? (
+                  "Purchase for BLUEOCEAN X member!!"
+                ) : (
+                  <span>BLUE OCEAN X အတွက် MEMBER ကြေးငွေသွင်းရန် !!</span>
+                )}
+              </h1>
+              {/* payment logo  */}
+              <div className="flex flex-col gap-3">
+                <div className="flex justify-around">
+                  <img
+                    className=" w-24 h-24 object-cover rounded-lg"
+                    src={kbz}
+                    alt=""
+                  />
+                  <img
+                    className=" w-24 h-24 object-cover rounded-lg"
+                    src={kpayQr}
+                    alt=""
+                  />
+                </div>
+                <div className="flex justify-around">
+                  <img
+                    className=" w-24 h-24 object-cover rounded-lg"
+                    src={wave}
+                    alt=""
+                  />
+                  <img
+                    className=" w-24 h-24 object-cover rounded-lg"
+                    src={waveQr}
+                    alt=""
+                  />
+                </div>
+              </div>
+              {lang ? (
+                <p>
+                  You Can Pay With Paypal. For Credit & Debit card , Cash-app ,
+                  Venmo , Zelle , Bank Transfer, Western Union , Bitcoin and
+                  Other Payments Methods, Just Contact US .
+                </p>
+              ) : (
+                <span>
+                  Wave - 09754058873 Kpay - 09754058873 တို့ဖြင့်
+                  ငွေပေးချေနိုင်ပါသည်။ ငွေလွဲတဲ့အခါ ကျေးဇူးပြု၍ Note(မှတ်ချက်)
+                  မှာ Shop လို့ရေးပေးပါခင်ဗျ။ ငွေလွဲထားသောပြေစာကို MESSENGER
+                  သို့ပြပြီး Login info ကို ရယူနိူင်ပါသည်။ မိတ်ဆွေရဲ့
+                  အားပေးမှုအတွက် အထူးကိုကျေးဇူးတင်လျှက်ပါ။
+                </span>
+              )}
+            </motion.div>
+            <motion.div
+              variants={variants}
+              className="flex flex-col gap-5 border-b shadow-md p-2"
+            >
+              <h1 className="text-2xl pb-2 border-b-2 border-[#2A9EB8] font-bold text-[#2A9EB8]">
+                Tutorial and Installation
+              </h1>
+              {/* tuto and app  */}
+              <div className="flex flex-col gap-5">
+                <div className="flex flex-col items-center gap-2">
+                  <h1 className=" self-start">-How to install BLUE OCEAN APP On Android TV ?</h1>
+                  <a href="https://youtu.be/NRDo6cKKXMg" target="blank">
+                    <button className="btn-outline"> Click here</button>{" "}
+                  </a>
+                </div>
+                <div className="flex flex-col items-center gap-2">
+                  <h1 className=" self-start">
+                    -How to install BLUE OCEAN APP On Amzon Firestick Stick ?
+                  </h1>
+                  <a href="https://youtu.be/3S-3qSHyba0" target="blank">
+                    <button className="btn-outline"> Click here</button>{" "}
+                  </a>
+                </div>
+                <div className="flex flex-col items-center gap-2">
+                  <h1 className=" self-start"> -Download from PlayStore </h1>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.mmaws.store.mobile&pli=1"
+                    target="blank"
+                  >
+                    <button className="btn-outline"> Click here</button>{" "}
+                  </a>
+                </div>
+                <div className="flex flex-col items-center gap-2">
+                  <h1 className=" self-start"> -Download from Browser </h1>
+                  <a href="https://pixeldrain.com/u/BCLkH3fz" target="blank">
+                    <button className="btn-outline"> Click here</button>{" "}
+                  </a>
+                </div>
+              </div>
             </motion.div>
           </motion.div>
         )}
