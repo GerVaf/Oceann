@@ -58,6 +58,7 @@ const Packages = () => {
           <p>SUBSCRIPTION PACKAGES</p>
           <span className="h-1 w-40 bg-[#2A9EB8]"></span>
         </div>
+        
         {/* pkg type  */}
         <div className="bg-violet-100 p-1 rounded-lg lg:self-auto self-center">
           <div className="flex relative">
@@ -81,6 +82,7 @@ const Packages = () => {
           </div>
         </div>
       </div>
+
 
       {/* packages Data  */}
       <div className=" grid xl:grid-cols-6  lg:grid-cols-4 grid-cols-2">
@@ -107,7 +109,7 @@ const Packages = () => {
               height={"100%"}
               url={pkgV}
               playing={true}
-              // controls={false}
+              controls={false}
               muted={true}
               loop={true}
             />
