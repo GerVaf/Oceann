@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import pakg from "../../assets/pkg.jpg";
+import ReactPlayer from "react-player";
+import pkgV from "../../assets/package.mp4";
+
 const Packages = () => {
   const [cate, setCate] = useState([
     {
@@ -78,9 +81,10 @@ const Packages = () => {
           </div>
         </div>
       </div>
+
       {/* packages Data  */}
       <div className=" grid xl:grid-cols-6  lg:grid-cols-4 grid-cols-2">
-        <div className=" flex md:flex-row flex-col col-span-2 lg:text-base text-[10px] md:m-5 shadow-md border rounded-lg overflow-hidden">
+        <div className=" flex flex-col col-span-2 lg:text-base text-[10px] md:m-5 shadow-md border rounded-lg overflow-hidden">
           {/* imga */}
           {/* <div className=" w-2/4">
             <ReactPlayer
@@ -96,13 +100,23 @@ const Packages = () => {
               }}
             />
           </div> */}
-          <div className="md:w-2/4 md:h-full h-[30vh] relative flex items-center justify-center">
-            <img src={pakg} className="w-full h-full object-cover object-center" alt="" />
-            {/* <p className="text-5xl font-bold text-[#2A9EB8] absolute">PREMINUM</p> */}
+          <div className=" relative flex items-center justify-center">
+            {/* <img src={pakg} className="w-full h-full object-cover object-center" alt="" /> */}
+            <ReactPlayer
+              width={"100%"}
+              height={"100%"}
+              url={pkgV}
+              playing={true}
+              controls={false}
+              muted={true}
+              loop={true}
+            />
           </div>
           {/* pack title  */}
-          <div className=" md:w-2/4 p-2 flex flex-col gap-5">
-            <h1 className="text-lg font-bold text-[#2A9EB8]">PREMIUM PACKAGES (5000MMK)</h1>
+          <div className=" p-2 flex flex-col gap-5">
+            <h1 className="text-lg font-bold text-[#2A9EB8]">
+              PREMIUM PACKAGES (5000MMK)
+            </h1>
             <div className="flex flex-col gap-3 text-base">
               <span>▪ +3000 LIVE TV CHANNELS</span>
               <span>▪ SD/HD/FHD/UHD QUALITY</span>
@@ -115,9 +129,7 @@ const Packages = () => {
               <span>▪ 2 CONNECTION (ONE USER)</span>
               <span>▪ ALL DEVICES SUPPORTED </span>
             </div>
-            <button className=" btn-outline text-base ">
-              BUY NOW
-            </button>
+            <button className=" btn-outline text-base ">BUY NOW</button>
           </div>
         </div>
       </div>
