@@ -109,7 +109,7 @@ const Packages = () => {
               height={"100%"}
               url={pkgV}
               playing={true}
-              controls={false}
+              // controls={false}
               muted={true}
               loop={true}
             />
