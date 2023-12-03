@@ -112,7 +112,7 @@ const NavBar = ({languageSelectorVisible,setLanguageSelectorVisible}) => {
           {active && (
             <motion.div
               key="menu"
-              className="w-full h-[100vh] text-sm py-10 bg-slate-100 absolute -bottom-[400px] flex flex-col items-center justify-end z-40 gap-6 font-bold"
+              className="w-full h-[100vh] py-10 bg-slate-100 absolute -bottom-[400px] flex flex-col items-center justify-end z-40 gap-6 font-bold"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
@@ -121,13 +121,13 @@ const NavBar = ({languageSelectorVisible,setLanguageSelectorVisible}) => {
               {/* Your links */}
               {links?.map((el) => (
                 <NavLink
-                  className="flex flex-col"
+                  className="flex flex-col text-2xl self-start px-5"
                   key={el.path}
                   onClick={() => setActive(false)}
                   to={el.path}
                 >
                   <p>{el.text}</p>
-                  <hr className="h-1 bg-[#2A9EB8]" />
+                  {/* <hr className="h-1 bg-[#2A9EB8]" /> */}
                 </NavLink>
               ))}
             </motion.div>

@@ -8,6 +8,7 @@ import kpayQr from "../../assets/almost/kpayQr.jpg";
 
 const Questions = ({ lang }) => {
   const [show, setShow] = useState(false);
+  const [showTuto, setShowTuto] = useState(false);
 
   const variants = {
     visible: { opacity: 1, height: "auto" },
@@ -24,7 +25,7 @@ const Questions = ({ lang }) => {
           "FREQUENTLY ASKED QUESTIONS"
         ) : (
           <span>အမေးအများဆုံး မေးခွန်းများ</span>
-        )}{" "}
+        )}
         <IoIosArrowForward
           className={`text-md transition duration-150 ${show && " rotate-90"} `}
         />
@@ -173,41 +174,68 @@ const Questions = ({ lang }) => {
               variants={variants}
               className="flex flex-col gap-5 border-b shadow-md p-2"
             >
-              <h1 className="text-2xl pb-2 border-b-2 border-[#2A9EB8] font-bold text-[#2A9EB8]">
-                Tutorial and Installation
-              </h1>
-              {/* tuto and app  */}
-              <div className="flex flex-col gap-5">
-                <div className="flex flex-col items-center gap-2">
-                  <h1 className=" self-start">-How to install BLUE OCEAN APP On Android TV ?</h1>
-                  <a href="https://youtu.be/NRDo6cKKXMg" target="blank">
-                    <button className="btn-outline"> Click here</button>{" "}
-                  </a>
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                  <h1 className=" self-start">
-                    -How to install BLUE OCEAN APP On Amzon Firestick Stick ?
-                  </h1>
-                  <a href="https://youtu.be/3S-3qSHyba0" target="blank">
-                    <button className="btn-outline"> Click here</button>{" "}
-                  </a>
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                  <h1 className=" self-start"> -Download from PlayStore </h1>
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.mmaws.store.mobile&pli=1"
-                    target="blank"
-                  >
-                    <button className="btn-outline"> Click here</button>{" "}
-                  </a>
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                  <h1 className=" self-start"> -Download from Browser </h1>
-                  <a href="https://pixeldrain.com/u/BCLkH3fz" target="blank">
-                    <button className="btn-outline"> Click here</button>{" "}
-                  </a>
-                </div>
+              {/* show tuto btn  */}
+              <div
+                onClick={() => setShowTuto(!showTuto)}
+                className="flex items-center rounded-md justify-around py-2 text-[#2A9EB8] bg-slate-100"
+              >
+                <h1 className="text-xl font-bold   text-center">
+                  Tutorial and Installation
+                </h1>
+                <IoIosArrowForward
+                  className={`text-md transition duration-150 ${
+                    showTuto && " rotate-90"
+                  } `}
+                />
               </div>
+              {/* tuto and app  */}
+              <AnimatePresence>
+                {showTuto && (
+                  <motion.div
+                    variants={variants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                    className="flex flex-col gap-5"
+                  >
+                    <div className="flex flex-col items-center gap-2">
+                      <h1 className="btn-outline self-start">
+                        <a href="https://youtu.be/NRDo6cKKXMg" target="blank">
+                          -How to install BLUE OCEAN APP On Android TV ?
+                        </a>
+                      </h1>
+                    </div>
+                    <div className="flex flex-col items-center gap-2">
+                      <h1 className="btn-outline self-start">
+                        <a href="https://youtu.be/3S-3qSHyba0" target="blank">
+                          -How to install BLUE OCEAN APP On Amzon Firestick
+                          Stick ?
+                        </a>
+                      </h1>
+                    </div>
+                    <div className="flex flex-col items-center gap-2">
+                      <h1 className="btn-outline self-start">
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.mmaws.store.mobile&pli=1"
+                          target="blank"
+                        >
+                          -Download from PlayStore
+                        </a>
+                      </h1>
+                    </div>
+                    <div className="flex flex-col items-center gap-2">
+                      <h1 className="btn-outline self-start">
+                        <a
+                          href="https://pixeldrain.com/u/BCLkH3fz"
+                          target="blank"
+                        >
+                          -Download from Browser
+                        </a>
+                      </h1>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </motion.div>
           </motion.div>
         )}
