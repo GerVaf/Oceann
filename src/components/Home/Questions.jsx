@@ -216,7 +216,7 @@ const Questions = ({ lang }) => {
                     <div className="flex flex-col items-center gap-2">
                       <h1 className="btn-outline self-start">
                         <a
-                          href="https://play.google.com/store/apps/details?id=com.mmaws.store.mobile&pli=1"
+                          href="https://play.google.com/store/apps/details?id=com.nathnetwork.blueoceann"
                           target="blank"
                         >
                           -Download from PlayStore
