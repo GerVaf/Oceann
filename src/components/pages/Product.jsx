@@ -1,11 +1,11 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import goog1 from "../../assets/prod/goog1.jpg";
-import goog2 from "../../assets/prod/goog2.jpg";
-import ftv1 from "../../assets/prod/ftv1.jpg";
-import ftv2 from "../../assets/prod/ftv2.jpg";
-import f4k1 from "../../assets/prod/f4k1.jpg";
-import f4k2 from "../../assets/prod/f4k2.jpg";
+import goog1 from "../../assets/prod/prod/goog1.png";
+import goog2 from "../../assets/prod/prod/goog2.png";
+import ftv1 from "../../assets/prod/prod/ftv1.png";
+import ftv2 from "../../assets/prod/prod/ftv2.png";
+import f4k1 from "../../assets/prod/prod/f4k1.png";
+import f4k2 from "../../assets/prod/prod/f4k2.png";
 const Product = () => {
   const productData = [
     {

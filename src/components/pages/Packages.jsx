@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import pakg from "../../assets/pkg.jpg";
+import pakg from "../../assets/pkg.jpeg";
 import ReactPlayer from "react-player";
 import pkgV from "../../assets/package.mp4";
 
@@ -175,8 +175,8 @@ const Packages = () => {
               className="my-2 flex flex-col col-span-2 lg:text-base text-[10px] md:m-5 shadow-md border rounded-lg overflow-hidden"
             >
               <div className=" relative flex items-center justify-center">
-                {/* <img src={pakg} className="w-full h-full object-cover object-center" alt="" /> */}
-                <ReactPlayer
+                <img src={pakg} className="w-full h-full object-cover object-center" alt="" />
+                {/* <ReactPlayer
                   width={"100%"}
                   height={"100%"}
                   url={pkgV}
@@ -184,7 +184,7 @@ const Packages = () => {
                   controls={false}
                   muted={true}
                   loop={true}
-                />
+                /> */}
               </div>
               {/* pack title  */}
               <div className=" p-2 flex flex-col gap-5">

@@ -5,6 +5,7 @@ import kbz from "../../assets/almost/kbz.png";
 import wave from "../../assets/almost/wave.png";
 import waveQr from "../../assets/almost/waveQr.jpg";
 import kpayQr from "../../assets/almost/kpayQr.jpg";
+import { LuMousePointerClick } from "react-icons/lu";
 
 const Questions = ({ lang }) => {
   const [show, setShow] = useState(false);
@@ -199,37 +200,42 @@ const Questions = ({ lang }) => {
                     className="flex flex-col gap-5"
                   >
                     <div className="flex flex-col items-center gap-2">
-                      <h1 className="btn-outline self-start">
+                      <h1 className="btn-outline self-start flex items-center w-full">
                         <a href="https://youtu.be/NRDo6cKKXMg" target="blank">
                           -How to install BLUE OCEAN APP On Android TV ?
+                          <LuMousePointerClick className=" text-lg" />
                         </a>
                       </h1>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                      <h1 className="btn-outline self-start">
+                      <h1 className="btn-outline self-start flex items-center w-full">
                         <a href="https://youtu.be/3S-3qSHyba0" target="blank">
                           -How to install BLUE OCEAN APP On Amzon Firestick
-                          Stick ?
+                          Stick ?<LuMousePointerClick className=" text-lg" />
                         </a>
                       </h1>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                      <h1 className="btn-outline self-start">
+                      <h1 className="btn-outline self-start flex items-center w-full">
                         <a
+                          className="flex items-center gap-5"
                           href="https://play.google.com/store/apps/details?id=com.nathnetwork.blueoceann"
                           target="blank"
                         >
                           -Download from PlayStore
+                          <LuMousePointerClick className=" text-lg" />
                         </a>
                       </h1>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                      <h1 className="btn-outline self-start">
+                      <h1 className="btn-outline self-start flex items-center w-full">
                         <a
+                          className="flex items-center gap-5"
                           href="https://pixeldrain.com/u/BCLkH3fz"
                           target="blank"
                         >
                           -Download from Browser
+                          <LuMousePointerClick className=" text-lg" />
                         </a>
                       </h1>
                     </div>
