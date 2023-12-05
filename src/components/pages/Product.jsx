@@ -2,12 +2,21 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import goog1 from "../../assets/prod/prod/goog1.png";
 import goog2 from "../../assets/prod/prod/goog2.png";
-import ftv1 from "../../assets/prod/prod/ftv1.png";
+import googl1 from "../../assets/prod/prod/googl1.jpeg";
+import googl2 from "../../assets/prod/prod/googl2.jpeg";
+import ftv1 from "../../assets/prod/prod/re1.jpeg";
 import ftv2 from "../../assets/prod/prod/ftv2.png";
-import f4k1 from "../../assets/prod/prod/f4k1.png";
+import f4k1 from "../../assets/prod/prod/re2.jpeg";
 import f4k2 from "../../assets/prod/prod/f4k2.png";
 const Product = () => {
   const productData = [
+    {
+      id: 3,
+      img: [googl1, googl2],
+      price: "စျေးနှုန်း ( ၂၀,၀၀၀၀ကျပ် )",
+      title:
+        "All-new Amazon Fire TV Stick 4K streaming device, includes support for Wi-Fi 6, Dolby Vision",
+    },
     {
       id: 1,
       img: [goog1, goog2],
@@ -22,13 +31,7 @@ const Product = () => {
       title:
         "Chromecast with Google TV (HD) - Streaming Stick Entertainment on Your TV with Voice Search - Watch Movies, Shows, and Live TV in 1080p HD - Snow",
     },
-    {
-      id: 3,
-      img: [goog1, goog2],
-      price: "စျေးနှုန်း ( ၂၀,၀၀၀၀ကျပ် )",
-      title:
-        "All-new Amazon Fire TV Stick 4K streaming device, includes support for Wi-Fi 6, Dolby Vision",
-    },
+
     {
       id: 4,
       img: [f4k1, f4k2],
@@ -49,7 +52,9 @@ const Product = () => {
             <div className="">
               <Marquee autoFill={true}>
                 {el?.img.map((ig) => {
-                  return <img className=" w-full h-48 " key={ig} src={ig} alt="" />;
+                  return (
+                    <img className=" w-full h-48 " key={ig} src={ig} alt="" />
+                  );
                 })}
               </Marquee>
             </div>

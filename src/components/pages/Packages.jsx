@@ -175,7 +175,11 @@ const Packages = () => {
               className="my-2 flex flex-col col-span-2 lg:text-base text-[10px] md:m-5 shadow-md border rounded-lg overflow-hidden"
             >
               <div className=" relative flex items-center justify-center">
-                <img src={pakg} className="w-full h-full object-cover object-center" alt="" />
+                <img
+                  src={pakg}
+                  className="w-full h-full object-cover object-center"
+                  alt=""
+                />
                 {/* <ReactPlayer
                   width={"100%"}
                   height={"100%"}
@@ -195,6 +199,13 @@ const Packages = () => {
                   {el?.pack?.map((pk) => {
                     return <span>{pk}</span>;
                   })}
+                  <span>
+                    ▪အကောင့်မျှဝေ အသုံးပြုခြင်း၊ ပြန်လည်ထုတ်လွှင့်ခြင်းကို
+                    တင်းကြပ်စွာ ခွင့်မပြုပါ။ ထိုကဲ့သို့ တွေ့ရှိပါက
+                    ဝန်ဆောင်မှုများကို ချက်ချင်းရပ်ဆိုင်းမည်ဖြစ်ပြီး
+                    ပြန်အမ်းငွေပေးမည်မဟုတ်ပါ။ ▪ဝန်ဆောင်မှုသည်
+                    အခမဲ့အက်ပ်များအတွက် အကျုံးမဝင်ပါ။
+                  </span>
                 </div>
                 <button className=" btn-outline text-base ">BUY NOW</button>
               </div>
