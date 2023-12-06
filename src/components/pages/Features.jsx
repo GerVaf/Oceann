@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Cards from "../Home/Card/Cards";
 
 const Features = () => {
-  return (
-    <div>Features</div>
-  )
-}
+  return <Cards />;
+};
 
-export default Features
+export default Features;
