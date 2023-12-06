@@ -3,9 +3,15 @@ import React from "react";
 const Channels = () => {
   return (
     <div className="flex flex-col gap-5 items-center my-5">
-      <h1 className="font-bold text-3xl lg:text-5xl text-[#2A9EB8] text-center">CHANNELS LISTS PREMIUM + VIP</h1>
-      <h2 className="font-semibold text-xl lg:text-2xl text-[#2A9EB8]">OVER 10,000 + LIVE CHANNELS</h2>
-      <h3 className="font-semibold text-xl lg:text-2xl text-[#2A9EB8]">SD,HD,FHD,UHD, QUALITY</h3>
+      <h1 className="font-bold text-xl lg:text-5xl text-white bg-[#2A9EB8] w-full py-2 text-center">
+        CHANNELS LISTS PREMIUM + VIP
+      </h1>
+      <h2 className="font-semibold text-md lg:text-2xl text-[#2A9EB8]">
+        OVER 10,000 + LIVE CHANNELS
+      </h2>
+      <h3 className="font-semibold text-md lg:text-2xl text-[#2A9EB8]">
+        SD,HD,FHD,UHD, QUALITY
+      </h3>
       <div className="flex flex-col w-[80%] lg:text-2xl lg:text-center  gap-2 text-lg p-5 border shadow-md rounded-md text-gray-700">
         <span>Documentaries 🦧 🐍 🦑</span>
         <span>▪️Movies Network 🧜 🥷 🧞‍♂️</span>
@@ -67,8 +73,8 @@ const Channels = () => {
         <span>🇮🇱Israel - Channels</span>
         <span>🇵🇱Poland - Channels</span>
         <span>🇸🇪🇳🇴🇩🇰 Sweden-Norway-Denmark</span>
-        <span>✅ The Best Service You'll Ever Get</span>
       </div>
+      <span className="text-lg font-semibold py-5">✅ The Best Service You'll Ever Get</span> 
     </div>
   );
 };
