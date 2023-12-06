@@ -139,6 +139,7 @@ const Product = () => {
                 <span>⚙️ စက်အာမခံတစ်လပေးပါသည်။</span>
               </div>
             </div>
+            <button className=" btn-outline text-base ">BUY NOW</button>
           </div>
         );
       })}
@@ -147,3 +148,4 @@ const Product = () => {
 };
 
 export default Product;
+

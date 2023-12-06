@@ -11,7 +11,7 @@ const Cards = () => {
   const lang = useSelector((state) => state?.language?.eng);
 
   return (
-    <div className="mt-10 flex  flex-wrap gap-10 justify-center max-w-[1200px]">
+    <div className="my-10 flex  flex-wrap gap-10 justify-center max-w-[1200px]">
       <div className=" w-[330px] h-[350px] flex shadow-lg bg-gray-100 rounded-[1rem] px-2 py-5 ">
         <div className="flex flex-col items-center  gap-5">
           <div className="flex-shrink-0 mt-[0.4rem]">

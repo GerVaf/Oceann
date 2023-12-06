@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { FaLanguage } from "react-icons/fa";
 import usFlag from "./assets/football/us.png";
