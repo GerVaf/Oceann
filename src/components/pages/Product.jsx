@@ -50,7 +50,7 @@ const Product = () => {
           >
             {/* product img  */}
             <div className="">
-              <Marquee autoFill={true}>
+              <Marquee >
                 {el?.img.map((ig) => {
                   return (
                     <img className=" w-full h-48 " key={ig} src={ig} alt="" />
