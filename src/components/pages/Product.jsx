@@ -76,9 +76,9 @@ const Product = () => {
                 >
                   {/* inner data  */}
                   <div className="flex gap-2 w-[1500px] h-[200px]">
-                  {el?.img.map((item) => {
+                    {el?.img.map((item) => {
                       return (
-                        <motion.div key={item?.id} className=" w-[300px] h-full">
+                        <motion.div key={item} className=" w-[300px] h-full">
                           <img
                             className="w-full h-full object-cover"
                             src={item}
@@ -86,9 +86,10 @@ const Product = () => {
                           />
                         </motion.div>
                       );
-                    })}{el?.img.map((item) => {
+                    })}
+                    {el?.img.map((item) => {
                       return (
-                        <motion.div key={item?.id} className=" w-full h-full">
+                        <motion.div key={item} className=" w-full h-full">
                           <img
                             className="w-full h-full object-cover"
                             src={item}
@@ -96,9 +97,10 @@ const Product = () => {
                           />
                         </motion.div>
                       );
-                    })}{el?.img.map((item) => {
+                    })}
+                    {el?.img.map((item) => {
                       return (
-                        <motion.div key={item?.id} className=" w-full h-full">
+                        <motion.div key={item} className=" w-full h-full">
                           <img
                             className="w-full h-full object-cover"
                             src={item}
@@ -106,9 +108,10 @@ const Product = () => {
                           />
                         </motion.div>
                       );
-                    })}{el?.img.map((item) => {
+                    })}
+                    {el?.img.map((item) => {
                       return (
-                        <motion.div key={item?.id} className=" w-full h-full">
+                        <motion.div key={item} className=" w-full h-full">
                           <img
                             className="w-full h-full object-cover"
                             src={item}
