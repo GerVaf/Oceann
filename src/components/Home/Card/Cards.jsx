@@ -59,9 +59,11 @@ const Cards = () => {
                 "Fire TV Stick 4K streaming device , Android Phone , Android Box , Android TV , Smart TV And, iPhone , iPad , Computer , WebPlayer are the Supported Platforms."
               ) : (
                 <span>
-                  Fire TV Stick 4K streaming device , Android Phone , Android
-                  Box , Android TV , Smart TV And, iPhone, iPad, Computer ,
-                  WebPlayer များပေါ်တွင် အသုံးပြု၍ ရပါသည်။
+                  Amazon Fire TV Stick 4K streaming device, Google Chrome-cast
+                  with Google TV, Android TV, Android Box, Android Phone,
+                  iPhone, iPad, LG Smart TV (Web OS), Samsung Smart TV (Tizen
+                  OS) & Other Devices !! Computer , WebPlayer များပေါ်တွင်
+                  အသုံးပြု၍ ရပါသည်။
                 </span>
               )}
             </p>

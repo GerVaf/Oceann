@@ -231,6 +231,18 @@ const Questions = ({ lang }) => {
                       <h1 className="btn-outline self-start flex items-center w-full">
                         <a
                           className="flex items-center gap-5"
+                          href="https://apps.apple.com/us/app/smarters-player-lite/id1628995509"
+                          target="blank"
+                        >
+                          -Download from IOS
+                          <LuMousePointerClick className=" text-lg" />
+                        </a>
+                      </h1>
+                    </div>
+                    <div className="flex flex-col items-center gap-2">
+                      <h1 className="btn-outline self-start flex items-center w-full">
+                        <a
+                          className="flex items-center gap-5"
                           href="https://pixeldrain.com/u/BCLkH3fz"
                           target="blank"
                         >
