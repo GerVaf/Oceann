@@ -121,7 +121,7 @@ const NavBar = ({languageSelectorVisible,setLanguageSelectorVisible}) => {
               {/* Your links */}
               {links?.map((el) => (
                 <NavLink
-                  className="flex flex-col text-2xl self-start px-5 border-b-4 border-[#2A9EB8]"
+                  className="flex flex-col text-2xl self-start px-5"
                   key={el.path}
                   onClick={() => setActive(false)}
                   to={el.path}

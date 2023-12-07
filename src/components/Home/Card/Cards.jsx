@@ -38,7 +38,7 @@ const Cards = () => {
           </div>
         </div>
       </div>
-      <div className=" w-[330px] h-[350px] flex shadow-lg bg-gray-100 rounded-[1rem] px-2 py-5 ">
+      <div className=" w-[330px] h-[420px] flex shadow-lg bg-gray-100 rounded-[1rem] px-2 py-5 ">
         <div className="flex flex-col items-center  gap-5">
           <div className="flex-shrink-0 mt-[0.4rem]">
             <div className="icon-container w-[60px] h-[60px] rounded-[0.7rem]  flex justify-center items-center">
