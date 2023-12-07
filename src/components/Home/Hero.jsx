@@ -142,7 +142,6 @@ const Hero = () => {
           >
             Get Start <BsArrowRight />
           </Link>
-          <button className="btn ">More Information</button>
         </div>
       </div>
     </div>

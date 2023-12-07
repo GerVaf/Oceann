@@ -7,7 +7,7 @@ const Contactus = () => {
     <div className="flex flex-wrap justify-around">
       <div className="flex flex-col gap-3 p-5 m-5 text-gray-600 shadow-md border rounded-md">
         <div className="flex justify-around items-center">
-          <img className=" w-32 h-32" src={ser} alt="" />
+          <img className=" w-36 h-36" src={ser} alt="" />
           <p className="text-xl font-bold text-[#2A9EB8] border-b-2 border-[#2A9EB8]">
             Contact Us
           </p>

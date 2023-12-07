@@ -74,7 +74,7 @@ const Channels = () => {
         <span>🇵🇱Poland - Channels</span>
         <span>🇸🇪🇳🇴🇩🇰 Sweden-Norway-Denmark</span>
       </div>
-      <span className="text-lg font-semibold py-5">✅ The Best Service You'll Ever Get</span> 
+      <span className="text-xl font-semibold py-5">✅ The Best Service You'll Ever Get</span> 
     </div>
   );
 };
