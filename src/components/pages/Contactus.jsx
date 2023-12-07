@@ -4,7 +4,7 @@ import ser from "../../assets/ser.gif";
 
 const Contactus = () => {
   return (
-    <div className="flex flex-wrap justify-around">
+    <div className="flex flex-wrap justify-around scroll-smooth">
       <div className="flex flex-col gap-3 p-5 m-5 text-gray-600 shadow-md border rounded-md">
         <div className="flex justify-around items-center">
           <img className=" w-36 h-36" src={ser} alt="" />
