@@ -8,6 +8,7 @@ import ftv2 from "../../assets/prod/prod/ftv2.png";
 import f4k1 from "../../assets/prod/prod/re2.jpeg";
 import f4k2 from "../../assets/prod/prod/f4k2.png";
 import { motion } from "framer-motion";
+import Footer from "../Nav&Footer/Footer";
 
 const Product = () => {
   const productData = [
@@ -91,108 +92,118 @@ const Product = () => {
       },
     },
   };
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+
   return (
-    <div className=" lg:grid lg:grid-cols-3">
-      {productData?.map((el) => {
-        return (
-          <div
-            key={el.id}
-            className="flex flex-col m-2 lg:col-span-1 border rounded-md overflow-hidden gap-3 shadow-md"
-          >
-            {/* product img  */}
+    <div className="h-[100vh] overflow-scroll">
+      <div className=" lg:grid lg:grid-cols-3">
+        {productData?.map((el) => {
+          return (
             <div
-              className="my-5 flex justify-center"
-              style={{ overflow: "hidden", whiteSpace: "nowrap" }}
+              key={el.id}
+              className="flex flex-col m-2 lg:col-span-1 border rounded-md overflow-hidden gap-3  shadow-md"
             >
-              <div className=" relative w-[100%] overflow-hidden">
-                <motion.div
-                  className="bg-white text-[100px] font-bold flex items-center justify-center"
-                  variants={containerVariants}
-                  initial="animate"
-                  animate="animate"
-                  style={{ display: "inline-block" }}
-                >
-                  {/* inner data  */}
-                  <div className="flex gap-2 w-[1500px] h-[200px]">
-                    {el?.img.map((item) => {
-                      return (
-                        <motion.div key={item} className=" w-[300px] h-full">
-                          <img
-                            className="w-full h-full object-cover"
-                            src={item}
-                            alt=""
-                          />
-                        </motion.div>
-                      );
-                    })}
-                    {el?.img.map((item) => {
-                      return (
-                        <motion.div key={item} className=" w-full h-full">
-                          <img
-                            className="w-full h-full object-cover"
-                            src={item}
-                            alt=""
-                          />
-                        </motion.div>
-                      );
-                    })}
-                    {el?.img.map((item) => {
-                      return (
-                        <motion.div key={item} className=" w-full h-full">
-                          <img
-                            className="w-full h-full object-cover"
-                            src={item}
-                            alt=""
-                          />
-                        </motion.div>
-                      );
-                    })}
-                    {el?.img.map((item) => {
-                      return (
-                        <motion.div key={item} className=" w-full h-full">
-                          <img
-                            className="w-full h-full object-cover"
-                            src={item}
-                            alt=""
-                          />
-                        </motion.div>
-                      );
-                    })}
-                  </div>
-                </motion.div>
+              {/* product img  */}
+              <div
+                className="my-5 flex justify-center"
+                style={{ overflow: "hidden", whiteSpace: "nowrap" }}
+              >
+                <div className=" relative w-[100%] overflow-hidden">
+                  <motion.div
+                    className="bg-white text-[100px] font-bold flex items-center justify-center"
+                    variants={containerVariants}
+                    initial="animate"
+                    animate="animate"
+                    style={{ display: "inline-block" }}
+                  >
+                    {/* inner data  */}
+                    <div className="flex gap-2 w-[1500px] h-[200px]">
+                      {el?.img.map((item) => {
+                        return (
+                          <motion.div key={item} className=" w-[300px] h-full">
+                            <img
+                              className="w-full h-full object-cover"
+                              src={item}
+                              alt=""
+                            />
+                          </motion.div>
+                        );
+                      })}
+                      {el?.img.map((item) => {
+                        return (
+                          <motion.div key={item} className=" w-full h-full">
+                            <img
+                              className="w-full h-full object-cover"
+                              src={item}
+                              alt=""
+                            />
+                          </motion.div>
+                        );
+                      })}
+                      {el?.img.map((item) => {
+                        return (
+                          <motion.div key={item} className=" w-full h-full">
+                            <img
+                              className="w-full h-full object-cover"
+                              src={item}
+                              alt=""
+                            />
+                          </motion.div>
+                        );
+                      })}
+                      {el?.img.map((item) => {
+                        return (
+                          <motion.div key={item} className=" w-full h-full">
+                            <img
+                              className="w-full h-full object-cover"
+                              src={item}
+                              alt=""
+                            />
+                          </motion.div>
+                        );
+                      })}
+                    </div>
+                  </motion.div>
+                </div>
               </div>
+              {/* description  */}
+              <div className="flex flex-col text-base gap-5 p-2">
+                <h1 className="text-xl font-bold text-[#2A9EB8]">
+                  {el?.price}
+                </h1>
+                <p>{el?.title}</p>
+                <p>{el?.model}</p>
+                <div className="flex flex-col gap-2 text-gray-700">
+                  <p className="text-lg text-black">About this item</p>
+                  <p>{el?.about}</p>
+                  <p>{el?.note}</p>
+                </div>
+                <div className="flex flex-col gap-2 text-gray-700">
+                  <p className="text-lg text-black">What is include</p>
+                  {el?.include?.map((inn) => {
+                    return <p key={inn}>{inn}</p>;
+                  })}
+                </div>
+                <span>
+                  🔥အရည်အသွေးကောင်းမွန်သောပစ္စည်းများကိုသာရောင်းချပေးခြင်း၊
+                  မမှန်သောစက်များမရောင်းချခြင်း၊စက်အသစ်များကိုသာရောင်းချပေးခြင်း
+                  !!
+                </span>
+                <div className=" text-sm font-semibold flex flex-col gap-3 text-[#2A9EB8]">
+                  <span>💯% အာမခံချက်ဖြင့်ရောင်းချပေးခြင်း</span>
+                  <span>🎁 BLUE OCEAN X ၃လက်ဆောင်</span>
+                  <span>⚙️ စက်အာမခံတစ်လပေးပါသည်။</span>
+                </div>
+              </div>
+              <button className=" btn-outline text-base mt-auto ">
+                BUY NOW
+              </button>
             </div>
-            {/* description  */}
-            <div className="flex flex-col text-base gap-5 p-2">
-              <h1 className="text-xl font-bold text-[#2A9EB8]">{el?.price}</h1>
-              <p>{el?.title}</p>
-              <p>{el?.model}</p>
-              <div className="flex flex-col gap-2 text-gray-700">
-                <p className="text-lg text-black">About this item</p>
-                <p>{el?.about}</p>
-                <p>{el?.note}</p>
-              </div>
-              <div className="flex flex-col gap-2 text-gray-700">
-                <p className="text-lg text-black">What is include</p>
-                {el?.include?.map((inn) => {
-                  return <p key={inn}>{inn}</p>;
-                })}
-              </div>
-              <span>
-                🔥အရည်အသွေးကောင်းမွန်သောပစ္စည်းများကိုသာရောင်းချပေးခြင်း၊
-                မမှန်သောစက်များမရောင်းချခြင်း၊စက်အသစ်များကိုသာရောင်းချပေးခြင်း
-                !!
-              </span>
-              <div className=" text-sm font-semibold flex flex-col gap-3 text-[#2A9EB8]">
-                <span>💯% အာမခံချက်ဖြင့်ရောင်းချပေးခြင်း</span>
-                <span>🎁 BLUE OCEAN X ၃လက်ဆောင်</span>
-                <span>⚙️ စက်အာမခံတစ်လပေးပါသည်။</span>
-              </div>
-            </div>
-            <button className=" btn-outline text-base ">BUY NOW</button>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
+      <Footer />
     </div>
   );
 };

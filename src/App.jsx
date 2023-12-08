@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { FaLanguage } from "react-icons/fa";
@@ -22,6 +22,13 @@ const App = () => {
   const [languageSelectorVisible, setLanguageSelectorVisible] = useState(false);
   const loading = useSelector(selectLoading);
   const dispatch = useDispatch();
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to the top when the route changes
+    window.scrollTo({ top: 0 });
+  }, [location.pathname]);
+  console.log(location.pathname);
 
   const route = [
     { id: 7, path: "/", com: <Home /> },
@@ -102,8 +109,6 @@ const App = () => {
           <Route key={el.id} path={`${el.path}`} element={el.com} />
         ))}
       </Routes>
-
-      <Footer />
     </div>
   );
 };
