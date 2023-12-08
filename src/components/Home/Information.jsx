@@ -16,7 +16,7 @@ const Information = () => {
             {lang ? (
               "NEVER MISS A PPV EVENT AGAIN"
             ) : (
-              <span>PPV Event များကို လက်လွှတ် မခံလိုက်ပါနဲ့</span>
+              <span>PPV EVENT များကို လက်လွှတ် မခံလိုက်ပါနဲ့</span>
             )}
           </h1>
           <img
@@ -30,7 +30,7 @@ const Information = () => {
               has them all included with your monthly package.
             </p>
           ) : (
-            <span>
+            <span >
               သင်သာ လက်ဝှေ့၊ UFC နှင့် တခြားသော PPV Event များကို နှစ်သက်သူ
               တစ်ယောက် ဖြစ်လျှင် Blue Ocean X တွင် လစဥ်ကြေး ထည့်သွင်း၍
               စိတ်ကြိုက် ကြည့်ရှုနိုင်ပါသည်
