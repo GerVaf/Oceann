@@ -67,6 +67,7 @@ const Contactus = () => {
         method="POST"
         className="p-5 flex flex-col gap-5"
       >
+        <h1 className="text-xl text-center border-b-2 py-2 text-[#2A9EB8] font-bold border-[#2A9EB8]">Connect us directly</h1>
         <div className=" flex flex-col gap-5">
           <div className="flex flex-col gap-2" >
             <h1 className="text-lg ">Name:</h1>
