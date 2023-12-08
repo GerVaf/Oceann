@@ -51,3 +51,6 @@ span {
 .con {
   @apply w-40 h-40 text-3xl hover:bg-white my-5  text-white bg-gradient-to-r from-[#2A9EB8] to-[#3ac4e3] border-[#2A9EB8] border flex items-center justify-center rounded-xl transition duration-150;
 }
+.input{
+  @apply outline-none border rounded py-3 px-2 text-lg border-gray-300
+}
