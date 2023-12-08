@@ -25,7 +25,7 @@ const Questions = ({ lang }) => {
         {lang ? (
           "FREQUENTLY ASKED QUESTIONS"
         ) : (
-          <span>အမေးအများဆုံး မေးခွန်းများ</span>
+          <span className="title">အမေးအများဆုံး မေးခွန်းများ</span>
         )}
         <IoIosArrowForward
           className={`text-md transition duration-150 ${show && " rotate-90"} `}
@@ -59,7 +59,7 @@ const Questions = ({ lang }) => {
                   you all login info
                 </p>
               ) : (
-                <span>
+                <span className="why-small">
                   ငွေချေပြီး ၃၀ မိနစ် အတွင်း login info များကို ရရှိပါမည်။
                 </span>
               )}
@@ -83,7 +83,7 @@ const Questions = ({ lang }) => {
                   Xbox One PS4 iPad iPhone Android Tablets and many more devices
                 </p>
               ) : (
-                <span>
+                <span className="why-small">
                   ကျွန်တော်တို့ကို SMART TV, PC,MAG, Smartphone, Android TV,
                   Amazon Firestick,SMARTERS app and VLC M3U… Smart TV Amazon
                   Devices Apple Devices PC Laptop Zgemma Satellite Box Dreambox
@@ -110,7 +110,7 @@ const Questions = ({ lang }) => {
                   watch the channels without any issues.
                 </p>
               ) : (
-                <span>
+                <span className="why-small">
                   ကျွန်တော်တို့၏ IPTV ကို ကမ္ဘာပေါ်က ဘယ်နေရာမှ မဆို
                   ကြည့်ရှုနိုင်ပါသည်။ လိုင်းမထစ်ပဲ ချောချော မွေ့မွေ့
                   ကြည့်ရှုနိုင်ရန် အင်တာနက် speed အနည်းဆုံး 20Mbps လိုအပ်ပါသည်။
@@ -162,7 +162,7 @@ const Questions = ({ lang }) => {
                   Other Payments Methods, Just Contact US .
                 </p>
               ) : (
-                <span>
+                <span className="why-small">
                   Wave - 09754058873 Kpay - 09754058873 တို့ဖြင့်
                   ငွေပေးချေနိုင်ပါသည်။ ငွေလွဲတဲ့အခါ ကျေးဇူးပြု၍ Note(မှတ်ချက်)
                   မှာ Shop လို့ရေးပေးပါခင်ဗျ။ ငွေလွဲထားသောပြေစာကို MESSENGER
@@ -200,7 +200,7 @@ const Questions = ({ lang }) => {
                     className="flex flex-col gap-5"
                   >
                     <div className="flex flex-col items-center gap-2">
-                      <h1 className="btn-outline self-start flex items-center w-full">
+                      <h1 className="btn-outline why-small self-start flex items-center w-full">
                         <a href="https://youtu.be/NRDo6cKKXMg" target="blank">
                           -How to install BLUE OCEAN APP On Android TV ?
                           <LuMousePointerClick className=" text-lg" />
@@ -208,7 +208,7 @@ const Questions = ({ lang }) => {
                       </h1>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                      <h1 className="btn-outline self-start flex items-center w-full">
+                      <h1 className="btn-outline why-small self-start flex items-center w-full">
                         <a href="https://youtu.be/3S-3qSHyba0" target="blank">
                           -How to install BLUE OCEAN APP On Amzon Firestick
                           Stick ?<LuMousePointerClick className=" text-lg" />
@@ -216,7 +216,7 @@ const Questions = ({ lang }) => {
                       </h1>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                      <h1 className="btn-outline self-start flex items-center w-full">
+                      <h1 className="btn-outline why-small self-start flex items-center w-full">
                         <a
                           className="flex items-center gap-5"
                           href="https://play.google.com/store/apps/details?id=com.nathnetwork.blueoceann"
@@ -228,7 +228,7 @@ const Questions = ({ lang }) => {
                       </h1>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                      <h1 className="btn-outline self-start flex items-center w-full">
+                      <h1 className="btn-outline why-small self-start flex items-center w-full">
                         <a
                           className="flex items-center gap-5"
                           href="https://apps.apple.com/us/app/smarters-player-lite/id1628995509"
@@ -240,7 +240,7 @@ const Questions = ({ lang }) => {
                       </h1>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                      <h1 className="btn-outline self-start flex items-center w-full">
+                      <h1 className="btn-outline why-small self-start flex items-center w-full">
                         <a
                           className="flex items-center gap-5"
                           href="https://pixeldrain.com/u/BCLkH3fz"

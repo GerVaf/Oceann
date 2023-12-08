@@ -10,6 +10,12 @@
 span {
   font-family: "Padauk", sans-serif;
 }
+.why-small{
+  @apply text-base left-6
+}
+.title{
+  @apply text-xl leading-4
+}
 .bg-decoration {
   background: rgb(255, 255, 255);
   background: linear-gradient(
