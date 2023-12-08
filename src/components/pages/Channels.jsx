@@ -9,10 +9,10 @@ const Channels = () => {
         <h1 className="font-bold text-xl lg:text-5xl text-white bg-[#2A9EB8] w-full py-2 text-center">
           CHANNELS LISTS PREMIUM + VIP
         </h1>
-        <h2 className="font-semibold text-md lg:text-2xl text-[#2A9EB8]">
+        <h2 className="font-semibold text-lg lg:text-2xl text-[#2A9EB8]">
           OVER 10,000 + LIVE CHANNELS
         </h2>
-        <h3 className="font-semibold text-md lg:text-2xl text-[#2A9EB8]">
+        <h3 className="font-semibold text-lg lg:text-2xl text-[#2A9EB8]">
           SD,HD,FHD,UHD, QUALITY
         </h3>
         <div className="flex flex-col w-[80%] lg:text-2xl lg:text-center  gap-2 text-lg p-5 border shadow-md rounded-md text-gray-700">
