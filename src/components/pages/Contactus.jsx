@@ -63,7 +63,7 @@ const Contactus = () => {
       </div>
       <form
         target="_blank"
-        action="https://formsubmit.co/thantzinmin667@gmail.com"
+        action="https://formsubmit.co/support@blueoceanshop.org"
         method="POST"
         className="p-5 flex flex-col gap-5"
       >
