@@ -137,7 +137,7 @@ const Packages = () => {
         {/* title and pkg Type  */}
         <div className="flex lg:flex-row flex-col gap-5 justify-between mb-5">
           {/* title  */}
-          <div className="text-3xl font-bold text-[#2A9EB8] flex flex-col">
+          <div className="text-3xl font-bold text-[#2A9EB8] flex items-center text-center flex-col">
             <p>SUBSCRIPTION PACKAGES</p>
             <span className="h-1 w-40 bg-[#2A9EB8]"></span>
           </div>
