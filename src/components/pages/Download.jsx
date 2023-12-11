@@ -133,7 +133,7 @@ ${(<br />)}
   ];
   window.scrollTo({ top: 0, behavior: "smooth" });
   return (
-    <div className=" h-[100vh] overflow-scroll py-10">
+    <div className=" h-[100vh] overflow-scroll pt-10">
       {/* title  */}
       <div className="text-2xl font-bold text-[#2A9EB8] flex items-center text-center flex-col">
         <p>TUTORIAL AND INSTALLATION</p>
