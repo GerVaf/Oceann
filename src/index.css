@@ -11,7 +11,7 @@ span {
   font-family: "Padauk", sans-serif;
 }
 .why-small{
-  @apply text-base left-6
+  @apply text-base left-6 
 }
 .title{
   @apply text-xl leading-4

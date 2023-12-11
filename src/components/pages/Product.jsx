@@ -190,7 +190,7 @@ const Product = () => {
                   မမှန်သောစက်များမရောင်းချခြင်း၊စက်အသစ်များကိုသာရောင်းချပေးခြင်း
                   !!
                 </span>
-                <div className=" text-sm font-semibold flex flex-col gap-3 text-[#2A9EB8]">
+                <div className=" text-lg font-semibold flex flex-col gap-3 text-[#2A9EB8]">
                   <span>💯% အာမခံချက်ဖြင့်ရောင်းချပေးခြင်း</span>
                   <span>🎁 BLUE OCEAN X ၃လက်ဆောင်</span>
                   <span>⚙️ စက်အာမခံတစ်လပေးပါသည်။</span>

@@ -16,7 +16,9 @@ const Information = () => {
             {lang ? (
               "NEVER MISS A PPV EVENT AGAIN"
             ) : (
-              <span className="why-small title">PPV EVENT များကို လက်လွှတ် မခံလိုက်ပါနဲ့</span>
+              <span className="why-small title">
+                PPV EVENT များကို လက်လွှတ် မခံလိုက်ပါနဲ့
+              </span>
             )}
           </h1>
           <img
@@ -30,7 +32,7 @@ const Information = () => {
               has them all included with your monthly package.
             </p>
           ) : (
-            <span className="why-small" >
+            <span className="why-small">
               သင်သာ လက်ဝှေ့၊ UFC နှင့် တခြားသော PPV Event များကို နှစ်သက်သူ
               တစ်ယောက် ဖြစ်လျှင် Blue Ocean X တွင် လစဥ်ကြေး ထည့်သွင်း၍
               စိတ်ကြိုက် ကြည့်ရှုနိုင်ပါသည်
@@ -51,7 +53,11 @@ const Information = () => {
           {/* buy now btn 2 */}
           <Link to={"/packages"}>
             <button className="btn-outline">
-              {lang ? "BUY NOW " : <span className="why-small title">ဝယ်ယူရန်</span>}
+              {lang ? (
+                "BUY NOW "
+              ) : (
+                <span className="why-small title">ဝယ်ယူရန်</span>
+              )}
             </button>
           </Link>
         </div>
@@ -85,14 +91,24 @@ const Information = () => {
           {/* buy now btn 2 */}
           <Link to={"/packages"}>
             <button className="btn-outline">
-              {lang ? "BUY NOW " : <span className="why-small title">ဝယ်ယူရန်</span>}
+              {lang ? (
+                "BUY NOW "
+              ) : (
+                <span className="why-small title">ဝယ်ယူရန်</span>
+              )}
             </button>
           </Link>
         </div>
         {/* service /\ */}
         <div className="lg:col-span-1 justify-between flex flex-col text-center gap-5 px-5 shadow-md py-3 rounded-md mx-2">
           <h1 className="text-2xl font-bold text-[#2A9EB8]">
-            {lang ? "IN OUR SERVICE" : <span className="why-small title">ကျွန်တော်တို့၏ ဝန်ဆောင်မှု</span>}
+            {lang ? (
+              "IN OUR SERVICE"
+            ) : (
+              <span className="why-small title">
+                ကျွန်တော်တို့၏ ဝန်ဆောင်မှု
+              </span>
+            )}
           </h1>
           <img
             className=" rounded-md w-full  object-cover"
@@ -102,17 +118,25 @@ const Information = () => {
           {lang ? (
             <p>BEST MOVIES AND SERIES APP</p>
           ) : (
-            <span className="why-small">အကောင်းဆုံး ရုပ်ရှင်နှင့် ဇာတ်လမ်းတွဲ APP</span>
+            <span className="why-small">
+              အကောင်းဆုံး ရုပ်ရှင်နှင့် ဇာတ်လမ်းတွဲ APP
+            </span>
           )}
           {lang ? (
             <p>Frequently Updated Movies, High Quality Movies</p>
           ) : (
-            <span className="why-small">နောက်ဆုံးထွက် အရည်အသွေးမြင့် ရုပ်ရှင်ကားကောင်းများ</span>
+            <span className="why-small">
+              နောက်ဆုံးထွက် အရည်အသွေးမြင့် ရုပ်ရှင်ကားကောင်းများ
+            </span>
           )}
           {/* buy now btn 2 */}
           <Link to={"/packages"}>
             <button className="btn-outline">
-              {lang ? "BUY NOW " : <span className="why-small title">ဝယ်ယူရန်</span>}
+              {lang ? (
+                "BUY NOW "
+              ) : (
+                <span className="why-small title">ဝယ်ယူရန်</span>
+              )}
             </button>
           </Link>
         </div>
@@ -135,7 +159,9 @@ const Information = () => {
                 {lang ? (
                   "GET YOUR 24HR TRIAL"
                 ) : (
-                  <span className="why-small title">၁ ရက် အခမဲ့ သုံးစွဲခွင့်</span>
+                  <span className="why-small title">
+                    ၁ ရက် အခမဲ့ သုံးစွဲခွင့်
+                  </span>
                 )}
               </button>
             </a>
