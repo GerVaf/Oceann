@@ -4,7 +4,7 @@ import Footer from "../Nav&Footer/Footer";
 const Channels = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
   return (
-    <div className="h-[100vh] overflow-scroll">
+    <div className="h-[100vh] overflow-y-scroll">
       <div className="flex flex-col gap-5 items-center my-5">
         <h1 className="font-bold text-xl lg:text-5xl text-white bg-[#2A9EB8] w-full py-2 text-center">
           CHANNELS LISTS PREMIUM + VIP

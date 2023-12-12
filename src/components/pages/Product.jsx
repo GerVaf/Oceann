@@ -96,7 +96,7 @@ const Product = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <div className="h-[100vh] overflow-scroll">
+    <div className="h-[100vh] overflow-y-scroll">
       <div className=" lg:grid lg:grid-cols-3">
         {productData?.map((el) => {
           return (

@@ -139,8 +139,8 @@ const Download = () => {
   ];
   window.scrollTo({ top: 0, behavior: "smooth" });
   return (
-    <div className=" h-[100vh] overflow-scroll ">
-      <div className="my-10 mx-2 rounded border overflow-hidden ">
+    <div className=" h-[100vh] overflow-y-scroll ">
+      <div className="my-10 px-2 rounded border overflow-hidden w-full flex items-center justify-center">
         <img src={downld} alt="" />
       </div>
       {/* title  */}
@@ -151,7 +151,7 @@ const Download = () => {
 
       <Accordion items={accordionItems} />
 
-      <img className="py-10" src={downl} alt="" />
+      <img className="py-10 self-center w-full" src={downl} alt="" />
       <Footer />
     </div>
   );

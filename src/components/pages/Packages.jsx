@@ -132,7 +132,7 @@ const Packages = () => {
   };
   window.scrollTo({ top: 0, behavior: "smooth" });
   return (
-    <div className="h-[100vh] overflow-scroll">
+    <div className="h-[100vh] overflow-y-scroll">
       <div className="flex flex-col py-10 px-5 ">
         {/* title and pkg Type  */}
         <div className="flex lg:flex-row flex-col gap-5 justify-between mb-5">

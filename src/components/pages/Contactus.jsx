@@ -5,7 +5,7 @@ import Footer from "../Nav&Footer/Footer";
 
 const Contactus = () => {
   return (
-    <div className="h-[100vh] overflow-scroll">
+    <div className="h-[100vh] overflow-y-scroll">
       <div className="flex flex-wrap justify-around scroll-smooth">
         <div className="flex flex-col gap-3 p-5 m-5 text-gray-600 shadow-md border rounded-md">
           <div className="flex justify-around items-center">
