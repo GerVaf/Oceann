@@ -6,40 +6,42 @@ import { FaApple } from "react-icons/fa";
 import { BiLogoPlayStore } from "react-icons/bi";
 import { BsBrowserChrome } from "react-icons/bs";
 import downl from "../../assets/downl.jpg";
+import downld from "../../assets/up_down.jpg";
+import down_info from "../../assets//download/first_down.jpg";
+import down1_info from "../../assets//download/second_down.jpg";
+import down2_info from "../../assets//download/third_down.jpg";
+import fstick from "../../assets/download/down_icon.png";
+
 const Download = () => {
   const accordionItems = [
     {
       id: 1,
-      MyanTitle: "BLUE OCEAN APP ကို Android TV ပေါ်တွင် ဘယ်လိုသွင်းမလဲ?",
-      EngTitle: "How to install BLUE OCEAB APP on Android TV",
+      MyanTitle:
+        "BLUE OCEAN ကို Samsung TV [ Tizen OS ] နှင့် LG TV [ Web OS ] Smart TV များမှာ ဘယ်လိုကြည့်ရှုနိုင်မလဲ ?",
       MyanContent: [
         {
-          title: `Blue Ocean TV Channel များကို Samsung TV [ Tizen OS ] နှင့် LG TV [ Web OS ] Smart TV များမှာ ဘယ်လိုကြည့်ရှုနိုင်မလဲ ? ${(
-            <br />
-          )} APPS ဆိုတဲ့နေရာကိုဝင်ပြီးရင် IPTV SMARTERS PRO ကိုရိုက်ရှာပါ ပြီးရင် APP ကို  INSTALL လုပ်ပါ။ `,
-          img: "https://lh6.googleusercontent.com/KPejKHKNgogzKQLllASkGbCWnqLlTuYcUJYRbISH3qik0N3u1EKgVc1A4Z_5c8o9sIMsbuM1zfTkI88AR18tJAk7tOXdKlJqBdVO55_s-dLXO7PHayk-cUogC5RvlgY1uQ=w1280",
+          img: down_info,
+          title: `APPS ဆိုတဲ့နေရာကိုဝင်ပြီးရင် IPTV SMARTERS PRO ကိုရိုက်ရှာပါ ပြီးရင် APP ကို  INSTALL လုပ်ပါ။ `,
         },
         {
+          img: down1_info,
           title:
             "IPTV SMARTER  ကို INSTALL လုပ်လိုက်ပါ။ ပြီးရင် APP ကိုဖွင့်ပြီး အောက်ကအတိုင်းဖြည့်ပါ။",
-          img: "https://lh4.googleusercontent.com/i7n3-dDki65sUFog6I_tvZtyfyPSqWuZc5S-zRTBgzLkkaGlEhwHjBbWAQ-7WOMw3P9gi-hQrSf9Dg5eDi-mhE25ELEHJTE4DnDg45Iy1kk61bqtIeVYmW69WhmTV3wouw=w1280",
         },
         {
+          img: down2_info,
           title: ` အပေါ် မှာ ပြထားတဲ့အတိုင်း Username/Password & URL တွေကို ထည့်ပြီး Login ဝင်ပါ။
-${(<br />)}
-          URLထည့်ရန်  - http://mdy.one`,
+          \n URLထည့်ရန်  - http://mdy.one`,
         },
         {
           title:
             "မဝယ်ယူခင် မိမိအင်တာနက်ဖြင့် VPN လို/မလို Test Account ယူပြီးစမ်းလို့ရပါတယ်။",
-          img: "https://lh4.googleusercontent.com/z7VIEzG_JPTBzRbljl8nu2rIWNPldkcn6JO98K8RId40BIrtLTKK3gZZu8xz77DmcJqGbquryOTUcCsrDjhuehVL1EFihiuHvk29RB90gvrE7uO0AOpC-V64AhxQgFn6HA=w1280",
-          img1: "https://lh4.googleusercontent.com/z7VIEzG_JPTBzRbljl8nu2rIWNPldkcn6JO98K8RId40BIrtLTKK3gZZu8xz77DmcJqGbquryOTUcCsrDjhuehVL1EFihiuHvk29RB90gvrE7uO0AOpC-V64AhxQgFn6HA=w1280",
         },
       ],
     },
     {
       id: 2,
-      MyanTitle: "Download Link",
+      MyanTitle: "Section one",
       MyanContent: [
         {
           dow: "-How to install BLUE OCEAN APP On Amzon Firestick Stick ?",
@@ -61,21 +63,25 @@ ${(<br />)}
     },
     {
       id: 3,
-      MyanTitle: "Download Link",
+      MyanTitle: "Section two",
       MyanContent: [
         {
-          dowIc: <LuMemoryStick />,
+          id: 1,
+          dowIc: fstick,
           link: "https://youtu.be/3S-3qSHyba0",
         },
         {
+          id: 2,
           dowIc: <BiLogoPlayStore />,
           link: "https://play.google.com/store/apps/details?id=com.nathnetwork.blueoceann",
         },
         {
+          id: 3,
           dowIc: <FaApple />,
           link: "https://apps.apple.com/us/app/smarters-player-lite/id1628995509",
         },
         {
+          id: 4,
           dowIc: <BsBrowserChrome />,
           link: "https://pixeldrain.com/u/BCLkH3fz",
         },
@@ -133,7 +139,10 @@ ${(<br />)}
   ];
   window.scrollTo({ top: 0, behavior: "smooth" });
   return (
-    <div className=" h-[100vh] overflow-scroll pt-10">
+    <div className=" h-[100vh] overflow-scroll ">
+      <div className="my-10 mx-2 rounded border overflow-hidden ">
+        <img src={downld} alt="" />
+      </div>
       {/* title  */}
       <div className="text-2xl font-bold text-[#2A9EB8] flex items-center text-center flex-col">
         <p>TUTORIAL AND INSTALLATION</p>

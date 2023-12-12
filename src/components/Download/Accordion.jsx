@@ -21,6 +21,13 @@ const Accordion = ({ items }) => {
 
   return (
     <div className="my-5">
+      <a
+        href="https://youtu.be/NRDo6cKKXMg"
+        target="blank"
+        className="flex m-1 items-center text-lg justify-between p-4 text-white font-semibold rounded-md bg-[#2A9EB8] cursor-pointer"
+      >
+        BLUE OCEAN APP ကို Android TV ပေါ်တွင် ဘယ်လိုသွင်းမလဲ?
+      </a>
       {items.map((item, index) => (
         <motion.div
           key={index}
@@ -36,11 +43,13 @@ const Accordion = ({ items }) => {
             onClick={() => handleClick(index)}
           >
             <div>{item.MyanTitle}</div>
-            <IoIosArrowUp
-              className={`${
-                activeIndex === index && "rotate-180"
-              } transition duration-300`}
-            />
+            <div className="w-5 h-5 flex items-center justify-center">
+              <IoIosArrowUp
+                className={`${
+                  activeIndex === index && "rotate-180"
+                } transition duration-300 text-lg `}
+              />
+            </div>
           </div>
           {activeIndex === index && (
             <motion.div
@@ -61,8 +70,8 @@ const Accordion = ({ items }) => {
                   >
                     {item?.id === 1 && (
                       <>
-                        <span className="text-lg font-bold">{el?.title}</span>
                         <img src={el?.img} alt="" />
+                        <span className="text-lg font-bold">{el?.title}</span>
                       </>
                     )}
 
@@ -76,9 +85,13 @@ const Accordion = ({ items }) => {
                     )}
 
                     {item?.id === 3 && (
-                      <h1 className="bg-[#2A9EB8] rounded text-white text-xl flex items-center justify-center w-10 h-10">
+                      <h1 className="bg-[#2A9EB8] rounded-xl overflow-hidden text-white text-xl flex items-center justify-center w-10 h-10">
                         <a href={el?.link} target="balnk">
-                          {el?.dowIc}
+                          {el?.id === 1 ? (
+                            <img src={el?.dowIc} alt="" />
+                          ) : (
+                            el?.dowIc
+                          )}
                         </a>
                       </h1>
                     )}
