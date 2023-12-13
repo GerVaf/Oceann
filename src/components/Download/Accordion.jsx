@@ -26,7 +26,10 @@ const Accordion = ({ items }) => {
         target="blank"
         className="flex m-1 items-center text-lg justify-between p-4 text-white font-semibold rounded-md bg-[#2A9EB8] cursor-pointer"
       >
-        BLUE OCEAN APP ကို Android TV ပေါ်တွင် ဘယ်လိုသွင်းမလဲ?
+        BLUE OCEAN APP ကို Android TV ပေါ်တွင် ဘယ်လိုသွင်းမလဲ? IoIosArrowUp
+        <div className="w-5 h-5 flex items-center justify-center">
+          <IoIosArrowUp className="transition rotate-90 duration-300 text-lg " />
+        </div>
       </a>
       {items.map((item, index) => (
         <motion.div
@@ -85,10 +88,14 @@ const Accordion = ({ items }) => {
                     )}
 
                     {item?.id === 3 && (
-                      <h1 className="bg-[#2A9EB8] rounded-xl overflow-hidden text-white text-xl flex items-center justify-center w-10 h-10">
+                      <h1 className="bg-[#2A9EB8] rounded-xl overflow-hidden text-white text-xl flex items-center justify-center w-12 h-12">
                         <a href={el?.link} target="balnk">
                           {el?.id === 1 ? (
-                            <img src={el?.dowIc} alt="" />
+                            <img
+                              className="text-white w-10 h-10"
+                              src={el?.dowIc}
+                              alt=""
+                            />
                           ) : (
                             el?.dowIc
                           )}

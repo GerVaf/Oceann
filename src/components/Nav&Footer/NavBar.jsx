@@ -70,7 +70,7 @@ const NavBar = ({languageSelectorVisible,setLanguageSelectorVisible}) => {
               <div
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={() => handleMouseLeave(index)}
-                className="flex flex-col overflow-hidden relative"
+                className="flex text-base flex-col overflow-hidden relative"
               >
                 {link.text}
                 {/* underline animaiton */}

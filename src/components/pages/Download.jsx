@@ -10,7 +10,7 @@ import downld from "../../assets/up_down.jpg";
 import down_info from "../../assets//download/first_down.jpg";
 import down1_info from "../../assets//download/second_down.jpg";
 import down2_info from "../../assets//download/third_down.jpg";
-import fstick from "../../assets/download/down_icon.png";
+import fstick from "../../assets/download/fire_tv.svg";
 
 const Download = () => {
   const accordionItems = [

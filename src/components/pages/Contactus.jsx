@@ -6,13 +6,15 @@ import Footer from "../Nav&Footer/Footer";
 const Contactus = () => {
   return (
     <div className="h-[100vh] overflow-y-scroll">
+      {/* title  */}
+      <div className="text-2xl font-bold pt-10 text-[#2A9EB8] flex items-center text-center flex-col">
+        <p>Contact Us</p>
+        <span className="h-1 w-40 bg-[#2A9EB8]"></span>
+      </div>
       <div className="flex flex-wrap justify-around scroll-smooth">
-        <div className="flex flex-col gap-3 p-5 m-5 text-gray-600 shadow-md border rounded-md">
+        <div className="flex flex-col gap-3 p-5 m-5 w-full text-gray-600 shadow-md border rounded-md">
           <div className="flex justify-around items-center">
             <img className=" w-36 h-36" src={ser} alt="" />
-            <p className="text-xl font-bold text-[#2A9EB8] border-b-2 border-[#2A9EB8]">
-              Contact Us
-            </p>
           </div>
           <p className="why-small">
             ▪️ အကောက် သက်တမ်းတိုးခြင်း၊ အကောက်သစ်ဝယ်ယူလိုခြင်းများအတွက် မနက် [ ၉
@@ -29,6 +31,7 @@ const Contactus = () => {
             ကြည့်ရူ့ခံစားနိူင်ပါသည်။
           </p>
         </div>
+
         <a
           className="con flex flex-col items-center gap-5"
           href="https://www.facebook.com/blueoceanx.mm"
@@ -96,7 +99,7 @@ const Contactus = () => {
           </button>
         </div>
       </form>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
