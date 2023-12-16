@@ -16,7 +16,7 @@ const Channels = () => {
           SD,HD,FHD,UHD, QUALITY
         </h3>
         <div className="flex flex-col w-[80%] lg:text-2xl lg:text-center  gap-2 text-lg p-5 border shadow-md rounded-md text-gray-700">
-          <span>Documentaries 🦧 🐍 🦑</span>
+          <span>▪️Documentaries 🦧 🐍 🦑</span>
           <span>▪️Movies Network 🧜 🥷 🧞‍♂️</span>
           <span>▪️Sports Networks 🏉 🥊 ⚽️</span>
           <span>▪️Kids 🍿 🍪 🍼</span>
