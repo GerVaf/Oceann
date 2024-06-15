@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import pakg from "../../assets/pkg.jpeg";
-import ReactPlayer from "react-player";
-import pkgV from "../../assets/package.mp4";
+// import ReactPlayer from "react-player";
+// import pkgV from "../../assets/package.mp4";
 import Footer from "../Nav&Footer/Footer";
 
 const Packages = () => {
@@ -199,7 +199,7 @@ const Packages = () => {
                   </h1>
                   <div className="flex flex-col gap-3 text-base">
                     {el?.pack?.map((pk) => {
-                      return <span>{pk}</span>;
+                      return <span key={pk}>{pk}</span>;
                     })}
                     <span>
                       ▪အကောင့်မျှဝေ အသုံးပြုခြင်း၊ ပြန်လည်ထုတ်လွှင့်ခြင်းကို
@@ -209,7 +209,14 @@ const Packages = () => {
                       အခမဲ့အက်ပ်များအတွက် အကျုံးမဝင်ပါ။
                     </span>
                   </div>
-                  <button className=" btn-outline text-base ">BUY NOW</button>
+                  <a
+                    className=" btn-outline text-base text-center "
+                    href="https://m.me/blueoceanx.mm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    BUY NOW
+                  </a>
                 </div>
               </div>
             );

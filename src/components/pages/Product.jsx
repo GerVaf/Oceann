@@ -196,9 +196,14 @@ const Product = () => {
                   <span>⚙️ စက်အာမခံတစ်လပေးပါသည်။</span>
                 </div>
               </div>
-              <button className=" btn-outline text-base mt-auto ">
-                BUY NOW
-              </button>
+              <a
+                    className=" btn-outline text-base text-center mt-auto "
+                    href="https://m.me/blueoceanx.mm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    BUY NOW
+                  </a>
             </div>
           );
         })}
