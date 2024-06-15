@@ -198,7 +198,7 @@ const Product = () => {
               </div>
               <a
                     className=" btn-outline text-base text-center mt-auto "
-                    href="https://m.me/blueoceanx.mm"
+                    href="https://www.messenger.com/t/106777094682154"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
